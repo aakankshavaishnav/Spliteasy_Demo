@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="add-expense-page">
+  <div class="main">
+
+    <!-- Top bar -->
+    <div class="top-bar">
+      <div class="top-bar-inner">
+        <div class="icon-label-row">
+          <div class="back-button">
+            <img class="back-icon" src="back.svg" />
+          </div>
+          <div class="logo">
+            <div class="logo-bg-1"></div>
+            <div class="logo-bg-2"></div>
+            <div class="logo-inner">
+              <img class="logo-receipt" src="receipt0.svg" />
+              <div class="logo-text">÷ 4</div>
+              <div class="logo-line-1"></div>
+              <div class="logo-line-2"></div>
+              <img class="logo-dash" src="dash0.svg" />
+            </div>
+          </div>
+          <div class="title-wrap">
+            <div class="title">
+              <div class="title-text">Add Expense</div>
+            </div>
+          </div>
+        </div>
+        <div class="profile-wrap">
+          <img class="profile-img" src="profile0.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <!-- Category -->
+      <div class="category-section">
+        <div class="category-box">
+          <div class="category-header">
+            <div class="label-box">
+              <div class="section-label">Category</div>
+            </div>
+            <div class="label-box">
+              <div class="available-text">3 Available</div>
+            </div>
+          </div>
+          <div class="tabs-wrapper">
+            <div class="tabs">
+              <div class="tab tab-active">
+                <img class="tab-icon" src="food.svg" />
+                <div class="tab-label-box">
+                  <div class="tab-text-active">Food &amp; Drinks</div>
+                </div>
+              </div>
+              <div class="tab">
+                <div class="tab-label-box">
+                  <div class="tab-text">Travel &amp; Fuel</div>
+                </div>
+              </div>
+              <div class="tab">
+                <div class="tab-label-box">
+                  <div class="tab-text">Stay/Hotel</div>
+                </div>
+              </div>
+              <div class="tab">
+                <img class="tab-icon" src="insights.svg" />
+                <div class="tab-label-box">
+                  <div class="tab-text">Insights</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Group, paid by, date -->
+      <div class="group-section">
+        <div class="details-card">
+          <div class="group-row">
+            <div class="icon-label-row">
+              <img class="row-icon" src="group.svg" />
+              <div class="label-box">
+                <div class="row-label">Target Group</div>
+              </div>
+            </div>
+            <div class="group-pill">
+              <div class="label-box">
+                <div class="group-name">Goa Trip 🏖️</div>
+              </div>
+              <img class="dropdown-arrow" src="arrow.svg" />
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="paid-by-row">
+            <div class="icon-label-row">
+              <img class="row-icon" src="paid.svg" />
+              <div class="label-box">
+                <div class="row-label">Paid by</div>
+              </div>
+            </div>
+            <div class="paid-button">
+              <img class="paid-avatar" src="you.png" />
+              <div class="tab-label-box">
+                <div class="tab-text">You</div>
+              </div>
+              <img class="dropdown-arrow" src="arrow.svg" />
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="date-row">
+            <div class="icon-label-row">
+              <img class="row-icon" src="calendar.svg" />
+              <div class="label-box">
+                <div class="row-label">Date</div>
+              </div>
+            </div>
+            <div class="date-button">
+              <div class="tab-label-box">
+                <div class="tab-text">Today, 26 Feb 2026</div>
+              </div>
+              <img class="dropdown-arrow" src="arrow.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Split -->
+      <div class="split-section">
+        <div class="split-card">
+          <div class="row-between">
+            <div class="split-left">
+              <div class="split-icon-bg">
+                <img class="split-icon" src="split.svg" />
+              </div>
+              <div class="split-title-box">
+                <div class="split-heading">
+                  <div class="split-title">Split Equally</div>
+                </div>
+              </div>
+            </div>
+            <div class="split-amount-box">
+              <div class="split-amount">₹862.50</div>
+              <div class="per-person-box">
+                <div class="per-person-text">/ person</div>
+              </div>
+            </div>
+          </div>
+          <div class="change-split-wrap">
+            <div class="change-split-button">
+              <div class="icon-label-row">
+                <div class="label-box">
+                  <div class="change-split-text">Change split</div>
+                </div>
+                <img class="arrow-icon" src="arrow-right.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Amount + title -->
+      <div class="amount-section">
+        <div class="amount-card">
+          <div class="currency-wrap">
+            <div class="currency-pill">
+              <img class="currency-icon" src="currency.svg" />
+              <div class="tab-label-box">
+                <div class="currency-text">Indian Rupee (INR)</div>
+              </div>
+            </div>
+          </div>
+          <div class="amount-wrap">
+            <div class="amount-display">
+              <div class="rupee-symbol">₹</div>
+              <div class="amount-input"></div>
+            </div>
+          </div>
+          <div class="title-input-row">
+            <img class="title-icon" src="title.svg" />
+            <div class="title-input-box">
+              <div class="title-input-inner">
+                <div class="title-placeholder">Thickship</div>
+              </div>
+            </div>
+          </div>
+          <div class="blur-1"></div>
+          <div class="blur-2"></div>
+          <div class="amount-text-box">
+            <div class="amount-text">3,450.00</div>
+          </div>
+          <div class="gradient-wrap">
+            <div class="gradient-bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bill & receipt -->
+      <div class="receipt-section">
+        <div class="receipt-card">
+          <div class="row-between">
+            <div class="icon-label-row">
+              <img class="receipt-icon" src="receipt-icon.svg" />
+              <div class="label-box">
+                <div class="section-label">Bill &amp; Receipt</div>
+              </div>
+            </div>
+            <div class="attached-badge">
+              <div class="attached-text">1 Attached</div>
+            </div>
+          </div>
+
+          <div class="thumbnails-wrap">
+            <div class="thumbnails-row">
+              <div class="receipt-thumb">
+                <img class="receipt-thumb-img" src="receipt-photo.png" />
+                <div class="thumb-actions">
+                  <div class="thumb-btn">
+                    <div class="btn-shadow"></div>
+                    <img class="thumb-btn-icon" src="view.svg" />
+                  </div>
+                  <div class="thumb-btn">
+                    <div class="btn-shadow"></div>
+                    <img class="thumb-btn-icon" src="delete.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="add-photo-button">
+                <div class="add-photo-icon-bg">
+                  <img class="add-photo-icon" src="camera.svg" />
+                </div>
+                <div class="tab-label-box">
+                  <div class="add-photo-text">Add Photo / PDF</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="notes-wrap">
+            <div class="notes-box">
+              <img class="notes-icon" src="note.svg" />
+              <div class="notes-input-box">
+                <div class="notes-input-inner">
+                  <div class="notes-placeholder">Add optional massage</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom buttons -->
+      <div class="bottom-actions">
+        <div class="more-options-wrap">
+          <div class="more-options-button">
+            <div class="button-text-box">
+              <div class="more-options-text">More Options</div>
+            </div>
+            <img class="arrow-icon" src="more.svg" />
+          </div>
+        </div>
+        <div class="save-wrap">
+          <div class="save-button">
+            <div class="button-text-box">
+              <div class="save-text">
+                <span>
+                  <span class="save-text-part">Save Expenses (</span>
+                  <span class="save-text-part">₹</span>
+                  <span class="save-text-part">3,450.00)</span>
+                </span>
+              </div>
+            </div>
+            <img class="arrow-icon" src="save.svg" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom tabs -->
+      <div class="bottom-tabs">
+        <div class="tabs">
+          <div class="tab tab-active">
+            <img class="tab-icon" src="add.svg" />
+            <div class="tab-label-box">
+              <div class="tab-text-active">Add Expense</div>
+            </div>
+          </div>
+          <div class="tab">
+            <div class="tab-label-box">
+              <div class="tab-text">Cancel</div>
+            </div>
+          </div>
+          <div class="tab">
+            <div class="tab-label-box">
+              <div class="tab-text">Save</div>
+            </div>
+          </div>
+          <div class="tab">
+            <img class="tab-icon" src="insights.svg" />
+            <div class="tab-label-box">
+              <div class="tab-text">Insights</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-home">
+      <img class="nav-icon" src="home.png" />
+      <div class="nav-label-wrap">
+        <div class="nav-text-active">Home</div>
+      </div>
+    </div>
+    <div class="nav-friends">
+      <img class="nav-icon" src="friends.svg" />
+      <div class="nav-label-wrap">
+        <div class="nav-text">Friends</div>
+      </div>
+    </div>
+    <div class="nav-groups">
+      <img class="nav-icon" src="groups.svg" />
+      <div class="nav-label-wrap">
+        <div class="nav-text">Groups</div>
+      </div>
+    </div>
+    <div class="nav-profile">
+      <img class="nav-icon" src="profile.svg" />
+      <div class="nav-label-wrap">
+        <div class="nav-text">Profile</div>
+      </div>
+    </div>
+    <div class="nav-add">
+      <div class="nav-add-button">
+        <img class="nav-add-icon" src="plus.svg" />
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
