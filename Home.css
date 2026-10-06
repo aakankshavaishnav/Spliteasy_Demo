@@ -1277,13 +1277,9 @@ body {
 
 .bottom-nav {
 
-    position: fixed;
+   
 
-    left: 50%;
-
-    bottom: 0;
-
-    transform: translateX(-50%);
+    transform: translateX(+20%);
 
     width: 100%;
 
@@ -1401,7 +1397,7 @@ button {
 
 button:hover {
 
-    transform: translateY(-1px);
+    transform: translateY();
 
 }
 
@@ -1412,150 +1408,3 @@ button:active {
 
 }
 
-
-/* =========================================
-   RESPONSIVE
-========================================= */
-
-@media (max-width: 390px) {
-
-    .main-container {
-
-        padding-left: 12px;
-
-        padding-right: 12px;
-
-    }
-
-
-    .summary-card {
-
-        padding-left: 13px;
-
-        padding-right: 13px;
-
-    }
-
-
-    .balance-row {
-
-        gap: 7px;
-
-    }
-
-
-    .balance-box {
-
-        padding: 5px;
-
-    }
-
-
-    .filter {
-
-        padding-left: 11px;
-
-        padding-right: 11px;
-
-    }
-
-
-    .group-info h3 {
-
-        font-size: 15px;
-
-    }
-
-
-    .status {
-
-        padding-left: 7px;
-
-        padding-right: 7px;
-
-        font-size: 9px;
-
-    }
-
-
-    .create-banner {
-
-        flex-direction: column;
-
-        align-items: stretch;
-
-    }
-
-
-    .create-button {
-
-        width: 100%;
-
-    }
-
-
-    .bottom-actions {
-
-        gap: 8px;
-
-    }
-
-
-    .search-box {
-
-        width: 145px;
-
-    }
-
-}
-
-
-/* =========================================
-   DESKTOP
-========================================= */
-
-@media (min-width: 768px) {
-
-    body {
-
-        padding-bottom: 0;
-
-    }
-
-
-    .main-container {
-
-        max-width: 700px;
-
-        padding-top: 40px;
-
-        padding-bottom: 40px;
-
-    }
-
-
-    .summary-card {
-
-        min-height: 288px;
-
-    }
-
-
-    .bottom-nav {
-
-        display: none;
-
-    }
-
-}
-
-
-@media (min-width: 1100px) {
-
-    .main-container {
-
-        max-width: 760px;
-
-    }
-
-}
