@@ -1,0 +1,873 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background: #faf8ff;
+    color: #131b2e;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+
+/* =========================
+   APP
+========================= */
+
+.app {
+    width: 100%;
+    max-width: 411px;
+    min-height: 100vh;
+    margin: auto;
+    background: #faf8ff;
+    padding-bottom: 90px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 64px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(250, 248, 255, 0.8);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(12px);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-mark {
+    width: 32px;
+    height: 32px;
+    border-radius: 7px;
+    background: linear-gradient(
+        180deg,
+        rgba(1, 126, 26, 0.6),
+        #017e1a
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-mark span {
+    color: white;
+    font-size: 11px;
+    font-family: Inter, sans-serif;
+}
+
+.brand-text h1 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.brand-text p {
+    color: #3c4a42;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 700;
+    letter-spacing: 0.44px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.notification-btn {
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    font-size: 18px;
+    color: #3c4a42;
+}
+
+.profile-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+    padding: 20px 16px 30px;
+}
+
+
+/* =========================
+   PAGE TITLE
+========================= */
+
+.page-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.page-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.title-icon {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    background: #f2f3ff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 21px;
+}
+
+.page-title h2 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.export-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 7px 12px;
+
+    color: #494bd6;
+    background: #e2e7ff;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   TRIP SUMMARY
+========================= */
+
+.trip-summary {
+    padding: 16px;
+
+    background: #f2f3ff;
+    border-radius: 32px;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+
+    margin-bottom: 16px;
+}
+
+.trip-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 16px;
+}
+
+.trip-name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.trip-emoji {
+    font-size: 20px;
+}
+
+.trip-name h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.active-badge {
+    margin-left: 4px;
+    padding: 2px 8px;
+
+    color: #006c49;
+    background: rgba(0, 108, 73, 0.1);
+
+    border-radius: 999px;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.members {
+    display: flex;
+}
+
+.members img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+
+    margin-left: -5px;
+
+    border: 2px solid #f2f3ff;
+}
+
+.summary-stats {
+    display: flex;
+    gap: 8px;
+}
+
+.stat {
+    flex: 1;
+
+    padding: 8px;
+
+    background: white;
+
+    text-align: center;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.stat span {
+    display: block;
+
+    color: #3c4a42;
+
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 700;
+    letter-spacing: 0.44px;
+}
+
+.stat strong {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #131b2e;
+
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.stat.settled span,
+.stat.settled strong {
+    color: #006c49;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-box {
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 14px;
+
+    background: white;
+
+    border-radius: 999px;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+
+    margin-bottom: 10px;
+}
+
+.search-icon {
+    font-size: 20px;
+    color: #3c4a42;
+    margin-right: 10px;
+}
+
+.search-box input {
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    font-size: 14px;
+
+    color: #131b2e;
+}
+
+.search-box input::placeholder {
+    color: #6c7a71;
+}
+
+.filter-icon {
+    color: #3c4a42;
+}
+
+
+/* =========================
+   FILTERS
+========================= */
+
+.filters {
+    display: flex;
+    gap: 8px;
+
+    overflow-x: auto;
+
+    padding: 2px 0 8px;
+
+    scrollbar-width: none;
+}
+
+.filters::-webkit-scrollbar {
+    display: none;
+}
+
+.filter {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 6px 14px;
+
+    background: white;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 600;
+    color: #131b2e;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.filter.active {
+    color: white;
+    background: #006c49;
+}
+
+
+/* =========================
+   DATE SECTION
+========================= */
+
+.date-section {
+    margin-top: 20px;
+}
+
+.date-title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    color: #3c4a42;
+
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 700;
+
+    letter-spacing: 0.55px;
+}
+
+.date-title > span {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+}
+
+.today > span {
+    background: #006c49;
+}
+
+.yesterday > span {
+    background: #494bd6;
+}
+
+.older > span {
+    background: #bbcabf;
+}
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline {
+    position: relative;
+
+    margin-top: 8px;
+    padding-left: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 10px;
+    top: 0;
+    bottom: 0;
+
+    width: 2px;
+
+    background: #dae2fd;
+}
+
+
+/* =========================
+   EXPENSE CARD
+========================= */
+
+.expense-card {
+    position: relative;
+
+    padding: 16px;
+
+    background: white;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+
+    border-radius: 0;
+
+    z-index: 1;
+}
+
+.expense-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+.expense-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+
+    min-width: 0;
+}
+
+.expense-icon {
+    flex-shrink: 0;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 17px;
+}
+
+.expense-icon.food {
+    background: #ffdada;
+}
+
+.expense-icon.travel {
+    background: #e1e0ff;
+}
+
+.expense-icon.settlement {
+    background: #10b981;
+}
+
+.expense-icon.villa {
+    background: #c0c1ff;
+}
+
+.expense-info h3 {
+    max-width: 220px;
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.expense-info p {
+    margin-top: 2px;
+
+    color: #3c4a42;
+
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.expense-info p b {
+    margin: 0 3px;
+}
+
+.expense-info p em {
+    color: #006c49;
+    font-style: normal;
+}
+
+.amount {
+    flex-shrink: 0;
+
+    text-align: right;
+}
+
+.amount strong {
+    display: block;
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.amount span {
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 700;
+    letter-spacing: 0.44px;
+}
+
+.amount .get {
+    color: #006c49;
+}
+
+.amount .owe {
+    color: #b90538;
+}
+
+
+/* =========================
+   EXPENSE BOTTOM
+========================= */
+
+.expense-bottom {
+    margin-top: 8px;
+
+    padding: 8px 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(242, 243, 255, 0.4);
+}
+
+.expense-bottom > div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.expense-bottom span {
+    color: #3c4a42;
+
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 700;
+}
+
+.expense-bottom strong {
+    color: #131b2e;
+
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status {
+    padding: 2px 10px;
+
+    border-radius: 999px;
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    font-size: 11px !important;
+}
+
+.status i {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+}
+
+.status.pending {
+    color: #78350f !important;
+    background: #fef3c7;
+}
+
+.status.pending i {
+    background: #f59e0b;
+}
+
+.status.partial {
+    color: #494bd6 !important;
+    background: #e2e7ff;
+}
+
+.status.partial i {
+    background: #494bd6;
+}
+
+.status.locked {
+    color: #3c4a42 !important;
+    background: #eaedff;
+}
+
+
+/* =========================
+   SETTLEMENT
+========================= */
+
+.settlement-card {
+    background: rgba(111, 251, 190, 0.2);
+}
+
+.settlement-card .amount strong {
+    color: #006c49;
+}
+
+.settlement-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 8px;
+}
+
+.settlement-bottom > span:first-child {
+    color: #3c4a42;
+    font-size: 12px;
+}
+
+.settled-badge {
+    padding: 2px 10px;
+
+    color: #006c49;
+    background: rgba(0, 108, 73, 0.15);
+
+    border-radius: 999px;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   LEDGER
+========================= */
+
+.ledger {
+    margin-top: 24px;
+
+    padding: 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background: #f2f3ff;
+
+    border-radius: 32px;
+}
+
+.ledger-icon {
+    width: 36px;
+    height: 36px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #dae2fd;
+
+    color: #494bd6;
+}
+
+.ledger div:nth-child(2) {
+    flex: 1;
+}
+
+.ledger strong {
+    display: block;
+
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+}
+
+.ledger p {
+    color: #3c4a42;
+
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.ledger button {
+    color: #494bd6;
+
+    background: transparent;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   BOTTOM NAVIGATION
+========================= */
+
+.bottom-nav {
+
+
+
+    width: 100%;
+    max-width: 411px;
+    height: 70px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 5px 8px;
+
+    background: rgba(250, 248, 255, 0.9);
+
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.05);
+
+    backdrop-filter: blur(12px);
+
+    z-index: 100;
+}
+
+.bottom-nav a {
+    width: 56px;
+    height: 56px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    color: #3c4a42;
+}
+
+.bottom-nav a span {
+    font-size: 19px;
+    line-height: 20px;
+}
+
+.bottom-nav a small {
+    margin-top: 2px;
+
+    font-size: 11px;
+    line-height: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.44px;
+}
+
+.bottom-nav a:first-child {
+    color: #006c49;
+}
+
+.add-btn {
+    width: 56px;
+    height: 56px;
+
+    margin-top: -25px;
+
+    border-radius: 50%;
+
+    background: #10b981;
+
+    color: #00422b;
+
+    font-size: 25px;
+
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.35);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (min-width: 600px) {
+
+    body {
+        padding: 30px 0;
+    }
+
+    .app {
+        min-height: calc(100vh - 60px);
+
+        border-radius: 20px;
+
+        overflow: hidden;
+
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .bottom-nav {
+        bottom: 30px;
+
+        border-radius: 0 0 20px 20px;
+    }
+}

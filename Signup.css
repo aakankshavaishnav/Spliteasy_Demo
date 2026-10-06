@@ -1,0 +1,453 @@
+    /* ==========================================================================
+   Base & Reset
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #FAF8FF;
+  color: #131B2E;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+   Header Navbar
+   ========================================================================== */
+.app-header {
+  width: 100%;
+  height: 64px;
+  background: rgba(250, 248, 255, 0.80);
+  backdrop-filter: blur(12px);
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.04);
+}
+
+.header-container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(180deg, rgba(1, 126, 26, 0.60) 0%, #017E1A 100%);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-badge {
+  color: #0FA37F;
+  font-family: 'Inter', sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+  background: white;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  color: #131B2E;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.brand-tagline {
+  color: #3C4A42;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.44px;
+  line-height: 12px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.icon-btn:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.profile-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   Page Layout
+   ========================================================================== */
+.page-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 448px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* ==========================================================================
+   Auth Header Section
+   ========================================================================== */
+.auth-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-badge {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(45deg, #006C49 0%, #10B981 100%);
+  border-radius: 16px;
+  padding: 2px;
+  box-shadow: 0px 4px 6px -4px rgba(16, 185, 129, 0.20), 0px 10px 15px -3px rgba(16, 185, 129, 0.20);
+  margin-bottom: 16px;
+}
+
+.logo-inner {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-symbol {
+  color: #0FA37F;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.auth-title {
+  color: #131B2E;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+
+.auth-subtitle {
+  color: #3C4A42;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  max-width: 320px;
+}
+
+/* ==========================================================================
+   Auth Card Form Panel
+   ========================================================================== */
+.auth-card {
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 32px 24px;
+  box-shadow: 0px 4px 24px rgba(19, 27, 46, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Social Buttons */
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  width: 100%;
+  height: 48px;
+  border-radius: 9999px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.14px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+.btn-social {
+  background: #FFFFFF;
+  color: #131B2E;
+}
+
+.btn-google {
+  border: 1px solid #131B2E;
+}
+
+.btn-google:hover {
+  background-color: #F8F9FA;
+}
+
+.btn-apple {
+  background: #283044;
+  color: #EEF0FF;
+}
+
+.btn-apple:hover {
+  background-color: #1E2433;
+}
+
+/* Divider */
+.divider {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin: 4px 0;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #E2E7FF;
+  z-index: 1;
+}
+
+.divider span {
+  position: relative;
+  z-index: 2;
+  background-color: #FFFFFF;
+  padding: 0 12px;
+  color: #3C4A42;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/* Form Controls */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-label {
+  color: #3C4A42;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.24px;
+}
+
+.forgot-link {
+  color: #006C49;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.44px;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.input-wrapper {
+  width: 100%;
+  height: 48px;
+  background-color: #F2F3FF;
+  border-radius: 16px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: ring 0.2s ease;
+}
+
+.input-wrapper:focus-within {
+  outline: 2px solid #006C49;
+}
+
+.form-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #131B2E;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  outline: none;
+}
+
+.password-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* Checkbox */
+.checkbox-group {
+  padding: 2px 0;
+}
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox-custom {
+  width: 16px;
+  height: 16px;
+  background-color: #FFFFFF;
+  border: 1px solid #131B2E;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.checkbox-input:checked ~ .checkbox-custom {
+  background-color: #006C49;
+  border-color: #006C49;
+}
+
+.checkbox-input:checked ~ .checkbox-custom::after {
+  content: "";
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-bottom: 2px;
+}
+
+.checkbox-text {
+  color: #3C4A42;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/* Submit Button */
+.btn-primary {
+  background: #131B2E;
+  color: #FFFFFF;
+  box-shadow: 0px 8px 20px rgba(16, 185, 129, 0.25);
+  margin-top: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #0A0F1B;
+}
+
+/* ==========================================================================
+   Footer Section
+   ========================================================================== */
+.auth-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.auth-footer span {
+  color: #3C4A42;
+  font-weight: 400;
+}
+
+.signup-link {
+  color: #006C49;
+  font-weight: 600;
+  letter-spacing: 0.14px;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}

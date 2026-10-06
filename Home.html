@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SplitEasy - Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manuale:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                <div class="logo-box logo-dark"></div>
+                <div class="logo-box logo-light"></div>
+
+                <span class="logo-divider">÷ 4</span>
+            </div>
+
+            <div class="brand-text">
+                <div class="brand-name">SplitEasy</div>
+                <div class="tagline">Split bills, not friendships.</div>
+            </div>
+
+        </div>
+
+        <div class="navbar-right">
+
+            <button class="profile-icon" aria-label="Notifications">
+                ♟
+            </button>
+
+            <img
+                class="profile-image"
+                src="https://placehold.co/32x32"
+                alt="Profile"
+            >
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-container">
+
+        <!-- ================= SUMMARY CARD ================= -->
+
+        <section class="summary-card">
+
+            <div class="summary-content">
+
+                <h1>Welcome, Ariana</h1>
+
+                <div class="main-balance">
+                    +₹3,420
+                </div>
+
+                <div class="balance-row">
+
+                    <div class="balance-box owed">
+
+                        <div class="balance-icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <p>You are owed</p>
+                            <strong>₹4,850</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="balance-box owe">
+
+                        <div class="balance-icon">
+                            ×
+                        </div>
+
+                        <div>
+                            <p>You owe</p>
+                            <strong>₹1,430</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACTION BUTTONS -->
+
+            <div class="summary-actions">
+
+                <button class="btn-primary">
+                    <span>✓</span>
+                    Settle Up
+                </button>
+
+                <button class="btn-secondary">
+                    <span>♢</span>
+                    Remind
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FILTERS ================= -->
+
+        <div class="filters">
+
+            <button class="filter active">
+                <span>▦</span>
+                All Groups
+            </button>
+
+            <button class="filter">
+                <span>🏖️</span>
+                Trips
+            </button>
+
+            <button class="filter">
+                <span>🏠</span>
+                Flatmates
+            </button>
+
+        </div>
+
+
+        <!-- ================= ACTIVE SPACES HEADER ================= -->
+
+        <div class="section-header">
+
+            <div class="section-title">
+
+                <h2>Active Spaces</h2>
+
+                <span class="count">4</span>
+
+            </div>
+
+            <button class="sort-button">
+                Recently active
+                <span>⌄</span>
+            </button>
+
+        </div>
+
+
+        <!-- ================= GROUP CARDS ================= -->
+
+        <section class="groups">
+
+
+            <!-- GOA TRIP -->
+
+            <article class="group-card">
+
+                <div class="group-top">
+
+                    <div class="group-info">
+
+                        <div class="group-icon beach">
+                            🏖️
+                        </div>
+
+                        <div>
+
+                            <h3>Goa Trip 🏖️</h3>
+
+                            <p>◷ &nbsp;2h ago • 5 members</p>
+
+                        </div>
+
+                    </div>
+
+                    <span class="status positive">
+                        ● You get ₹2,150
+                    </span>
+
+                </div>
+
+
+                <div class="group-bottom">
+
+                    <div class="avatars">
+
+                        <img src="https://placehold.co/28x28" alt="">
+                        <img src="https://placehold.co/28x28" alt="">
+
+                    </div>
+
+                    <div class="total">
+
+                        <span>Total spent:</span>
+                        <strong>₹42,600</strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- FLAT 402 -->
+
+            <article class="group-card">
+
+                <div class="group-top">
+
+                    <div class="group-info">
+
+                        <div class="group-icon home">
+                            🏠
+                        </div>
+
+                        <div>
+
+                            <h3>Flat 402 - Indiranagar 🏠</h3>
+
+                            <p>Monthly rent & groceries • 3 members</p>
+
+                        </div>
+
+                    </div>
+
+                    <span class="status negative">
+                        ● You owe ₹850
+                    </span>
+
+                </div>
+
+
+                <div class="group-bottom">
+
+                    <div class="owe-info">
+
+                        <div class="avatars">
+
+                            <img src="https://placehold.co/28x28" alt="">
+                            <img src="https://placehold.co/28x28" alt="">
+
+                        </div>
+
+                        <span>Owe Aman for WiFi</span>
+
+                    </div>
+
+                    <div class="total">
+
+                        <span>Total:</span>
+                        <strong>₹18,400</strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- BIRTHDAY PARTY -->
+
+            <article class="group-card">
+
+                <div class="group-top">
+
+                    <div class="group-info">
+
+                        <div class="group-icon party">
+                            🎉
+                        </div>
+
+                        <div>
+
+                            <h3>Birthday _party</h3>
+
+                            <p>Drinks & cake • 8 members</p>
+
+                        </div>
+
+                    </div>
+
+                    <span class="status positive">
+                        ● You get ₹1,270
+                    </span>
+
+                </div>
+
+
+                <div class="group-bottom">
+
+                    <div class="avatars">
+
+                        <img src="https://placehold.co/28x28" alt="">
+                        <img src="https://placehold.co/28x28" alt="">
+
+                    </div>
+
+                    <div class="total">
+
+                        <span>Total spent:</span>
+                        <strong>₹9,200</strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- ================= CREATE GROUP BANNER ================= -->
+
+        <section class="create-banner">
+
+            <div class="banner-content">
+
+                <div class="banner-icon">
+                    +
+                </div>
+
+                <div>
+
+                    <h3>
+                        Planning another<br>
+                        hangout?
+                    </h3>
+
+                    <p>
+                        Instant split algorithm<br>
+                        handles messy tabs
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button class="create-button">
+                <span>▰</span>
+                Create
+            </button>
+
+        </section>
+
+
+        <!-- ================= SEARCH + NEW GROUP ================= -->
+
+        <div class="bottom-actions">
+
+            <div class="search-box">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="text"
+                    placeholder="search"
+                >
+
+                <button class="clear-search">
+                    ×
+                </button>
+
+            </div>
+
+
+            <button class="new-group-button">
+                <span>＋</span>
+                New Group
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= BOTTOM NAVIGATION ================= -->
+
+    <nav class="bottom-nav">
+
+        <a href="#" class="nav-item">
+
+            <span class="nav-icon">⌂</span>
+            <span>Home</span>
+
+        </a>
+
+
+        <a href="#" class="nav-item">
+
+            <span class="nav-icon">♟</span>
+            <span>Friends</span>
+
+        </a>
+
+
+        <a href="#" class="nav-item active-nav">
+
+            <span class="nav-icon">▣</span>
+            <span>Groups</span>
+
+        </a>
+
+
+        <a href="#" class="nav-item">
+
+            <span class="nav-icon">●</span>
+            <span>Profile</span>
+
+        </a>
+
+
+        <!-- CENTER CREATE BUTTON -->
+
+        <button class="floating-create">
+            +
+        </button>
+
+    </nav>
+
+
+</body>
+</html>

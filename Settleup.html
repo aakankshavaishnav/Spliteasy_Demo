@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SplitEasy - Settle Up</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Settleup.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- ================= HEADER ================= -->
+        <header class="header">
+
+            <div class="brand">
+                <div class="brand-logo">
+                    <span>÷</span>
+                    <span>4</span>
+                </div>
+
+                <div class="brand-name">
+                    <span>Split</span><span>Easy</span>
+                </div>
+
+                <span class="header-divider">/</span>
+
+                <span class="page-title">Settle Up</span>
+            </div>
+
+            <div class="profile-avatar">
+                M
+            </div>
+
+        </header>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+        <main class="main-content">
+
+            <!-- Trip Status -->
+            <section class="trip-status">
+
+                <div class="trip-pill">
+                    🏖️
+                    <span>Trip Details</span>
+                </div>
+
+                <div class="members-pill">
+                    3 Members Settling
+                </div>
+
+            </section>
+
+
+            <!-- ================= YOU OWE CARD ================= -->
+            <section class="owe-card">
+
+                <div class="owe-top">
+
+                    <div>
+                        <p class="small-label">You owe</p>
+
+                        <div class="settle-badge">
+                            SETTLE
+                        </div>
+                    </div>
+
+                    <div class="owe-amount">
+                        -₹850
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= BALANCES ================= -->
+            <section class="balances-section">
+
+                <div class="section-heading">
+
+                    <h2>Who Owes Whom</h2>
+
+                    <span>3 BALANCES</span>
+
+                </div>
+
+
+                <!-- Aman Card -->
+                <div class="balance-card receive-card">
+
+                    <div class="person-row">
+
+                        <div class="person-avatar aman">
+                            A
+                        </div>
+
+                        <div class="person-info">
+
+                            <h3>Aman Gupta</h3>
+
+                            <p>
+                                Aman Gupta owes You
+                            </p>
+
+                        </div>
+
+                        <div class="balance-right">
+
+                            <strong class="positive">
+                                +₹1,200
+                            </strong>
+
+                            <span>
+                                To Receive
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="expense-row">
+
+                        <div>
+                            <span class="expense-name">
+                                Resturant
+                            </span>
+
+                            <span class="expense-sub">
+                                Expense
+                            </span>
+                        </div>
+
+                        <span class="receive-label">
+                            RECEIVABLE
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-buttons">
+
+                        <button class="secondary-button">
+                            Record Cash / UPI
+                        </button>
+
+                        <button class="outline-button">
+                            Request Payment
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Sneha Card -->
+                <div class="balance-card pay-card">
+
+                    <div class="person-row">
+
+                        <div class="person-avatar sneha">
+                            S
+                        </div>
+
+                        <div class="person-info">
+
+                            <h3>Sneha Patel</h3>
+
+                            <p>
+                                You owe Sneha Patel
+                            </p>
+
+                        </div>
+
+                        <div class="balance-right">
+
+                            <strong class="negative">
+                                -₹850
+                            </strong>
+
+                            <span>
+                                You Pay
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="expense-row">
+
+                        <div>
+                            <span class="expense-name">
+                                Breakfast
+                            </span>
+
+                            <span class="expense-sub">
+                                Expense
+                            </span>
+                        </div>
+
+                        <span class="pay-label">
+                            TO PAY
+                        </span>
+
+                    </div>
+
+
+                    <button class="settle-button">
+                        Settle Now (₹850)
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= PAYMENT METHOD ================= -->
+            <section class="payment-card">
+
+                <div class="payment-header">
+
+                    <span class="payment-eyebrow">
+                        PAY & FINALIZE
+                    </span>
+
+                    <h2>
+                        Payment Method
+                    </h2>
+
+                </div>
+
+
+                <!-- Amount -->
+                <div class="payment-amount">
+
+                    <span>
+                        Settlement Amount
+                    </span>
+
+                    <strong>
+                        ₹850.00
+                    </strong>
+
+                </div>
+
+
+                <!-- Receiver -->
+                <div class="receiver">
+
+                    <div class="receiver-avatar">
+                        S
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Paying to
+                        </span>
+
+                        <strong>
+                            Sneha Patel
+                        </strong>
+
+                        <small>
+                            sneha@oksbi
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- UPI -->
+                <div class="upi-option selected">
+
+                    <div class="upi-left">
+
+                        <div class="radio active"></div>
+
+                        <div>
+
+                            <strong>
+                                UPI Payment
+                            </strong>
+
+                            <span>
+                                Recommended
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="upi-icon">
+                        UPI
+                    </div>
+
+                </div>
+
+
+                <!-- Payment Apps -->
+                <div class="payment-apps">
+
+                    <button>GPay</button>
+
+                    <button>PhonePe</button>
+
+                    <button>Paytm</button>
+
+                    <button>+BHIM</button>
+
+                </div>
+
+
+                <!-- Cash -->
+                <button class="cash-payment" disabled>
+
+                    <span>
+                        💵
+                    </span>
+
+                    Record as Cash Payment
+
+                </button>
+
+
+                <!-- WhatsApp Receipt -->
+                <div class="receipt-row">
+
+                    <div class="receipt-icon">
+                        ✓
+                    </div>
+
+                    <div class="receipt-text">
+
+                        <strong>
+                            WhatsApp Receipt
+                        </strong>
+
+                        <span>
+                            Send payment confirmation
+                        </span>
+
+                    </div>
+
+                    <div class="toggle active">
+                        <div></div>
+                    </div>
+
+                </div>
+
+
+                <!-- Security -->
+                <div class="security">
+
+                    <span>🔒</span>
+
+                    <span>
+                        Safe 128-bit Encrypted Ledger Clearance
+                    </span>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- ================================================= -->
+        <!-- BOTTOM AREA - NORMAL PAGE FLOW, NOT FIXED -->
+        <!-- ================================================= -->
+        <footer class="bottom-area">
+
+            <!-- Main Pay Button -->
+            <button class="pay-main-button">
+                Pay &amp; Settle ₹850 via UPI
+            </button>
+
+
+            <!-- Bottom Navigation -->
+            <nav class="bottom-nav">
+
+                <a href="#" class="nav-item active-nav">
+
+                    <span class="nav-icon">
+                        ⌂
+                    </span>
+
+                    <span>
+                        Home
+                    </span>
+
+                </a>
+
+
+                <a href="#" class="nav-item">
+
+                    <span class="nav-icon">
+                        ◉
+                    </span>
+
+                    <span>
+                        Friends
+                    </span>
+
+                </a>
+
+
+                <!-- Center Floating Button -->
+                <div class="floating-button">
+                    +
+                </div>
+
+
+                <a href="#" class="nav-item">
+
+                    <span class="nav-icon">
+                        ◫
+                    </span>
+
+                    <span>
+                        Groups
+                    </span>
+
+                </a>
+
+
+                <a href="#" class="nav-item">
+
+                    <span class="nav-icon">
+                        ◎
+                    </span>
+
+                    <span>
+                        Profile
+                    </span>
+
+                </a>
+
+            </nav>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>

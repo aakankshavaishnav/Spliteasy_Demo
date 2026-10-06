@@ -1,0 +1,1493 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    background: #FAF8FF;
+
+    color: #131B2E;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+/* =========================================
+   VARIABLES
+========================================= */
+
+:root {
+
+    --background: #FAF8FF;
+
+    --dark: #131B2E;
+
+    --text: #3C4A42;
+
+    --green: #006C49;
+
+    --green-light: #10B981;
+
+    --purple: #494BD6;
+
+    --lavender: #EAEDFF;
+
+    --light-lavender: #F2F3FF;
+
+    --red: #B90538;
+
+    --white: #FFFFFF;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.navbar {
+
+    height: 64px;
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 8px;
+
+    background: rgba(250, 248, 255, 0.8);
+
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.04);
+
+    backdrop-filter: blur(12px);
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+.header-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+}
+
+
+.back-button {
+
+    width: 44px;
+    height: 44px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: var(--dark);
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+
+    margin-left: 2px;
+}
+
+
+.brand-icon {
+
+    width: 32px;
+    height: 30px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 2px;
+
+    padding: 2px;
+
+    border-radius: 7px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(1, 126, 26, 0.6),
+        #017E1A
+    );
+}
+
+
+.brand-icon span {
+
+    background: rgba(1, 126, 26, 0.3);
+
+    border-radius: 3px;
+}
+
+
+.divide-four {
+
+    color: #0FA37F;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 5.12px;
+
+    font-weight: 400;
+}
+
+
+.navbar h1 {
+
+    margin-left: 4px;
+
+    font-size: 18px;
+
+    line-height: 24px;
+
+    font-weight: 600;
+
+    color: var(--dark);
+}
+
+
+.profile-small {
+
+    width: 32px;
+    height: 32px;
+
+    margin-right: 4px;
+
+    border-radius: 50%;
+
+    background: #EAEDFF;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.main-content {
+
+    width: 100%;
+
+    max-width: 402px;
+
+    margin: 0 auto;
+
+    padding-bottom: 30px;
+}
+
+
+/* =========================================
+   GROUP HEADER
+========================================= */
+
+.group-header {
+
+    width: 100%;
+
+    min-height: 64px;
+
+    padding: 4px 16px 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.group-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.group-icon {
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(16, 185, 129, 0.2);
+
+    color: var(--green);
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+
+.group-info h2 {
+
+    font-size: 18px;
+
+    line-height: 24px;
+
+    font-weight: 600;
+
+    color: var(--dark);
+}
+
+
+.group-meta {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+
+    margin-top: 2px;
+
+    font-size: 12px;
+
+    line-height: 16px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.24px;
+
+    color: var(--text);
+}
+
+
+.active-ledger {
+
+    color: var(--green);
+
+    font-weight: 700;
+}
+
+
+.more-button {
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: var(--lavender);
+
+    color: var(--dark);
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   ACTION TABS
+========================================= */
+
+.action-tabs {
+
+    width: 100%;
+
+    height: 54px;
+
+    padding: 8px 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+}
+
+.action-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+
+.action-tab {
+
+    height: 36px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 0 14px;
+
+    border: none;
+
+    border-radius: 999px;
+
+    background: var(--white);
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+
+    color: var(--dark);
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    line-height: 16px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.24px;
+
+    cursor: pointer;
+}
+
+
+.action-tab.active {
+
+    padding-left: 16px;
+
+    padding-right: 16px;
+
+    background: var(--green);
+
+    color: white;
+}
+
+
+.tab-icon {
+
+    font-size: 15px;
+
+    line-height: 15px;
+}
+
+
+.balance-icon {
+    color: var(--purple);
+}
+
+
+/* =========================================
+   GENERAL SECTION
+========================================= */
+
+.section {
+
+    width: 100%;
+
+    padding-top: 16px;
+}
+
+
+.section-heading {
+
+    padding: 0 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+
+.section-heading h2,
+.recent-heading h2 {
+
+    font-size: 18px;
+
+    line-height: 24px;
+
+    font-weight: 600;
+
+    color: var(--dark);
+}
+
+
+.section-heading p {
+
+    margin-top: 2px;
+
+    font-size: 12px;
+
+    line-height: 16px;
+
+    font-weight: 400;
+
+    color: var(--text);
+}
+
+
+.status-pill {
+
+    padding: 2px 8px;
+
+    border-radius: 999px;
+
+    background: rgba(225, 224, 255, 0.4);
+
+    color: var(--purple);
+
+    font-size: 11px;
+
+    line-height: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.44px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   MEMBER CARDS
+========================================= */
+
+.member-cards {
+
+    display: flex;
+
+    gap: 8px;
+
+    padding: 8px 16px 0;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+}
+
+.member-cards::-webkit-scrollbar {
+    display: none;
+}
+
+
+.member-card {
+
+    width: 144px;
+
+    min-width: 144px;
+
+    height: 142px;
+
+    padding: 8px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    background: white;
+
+    border-radius: 16px;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+.member-avatar {
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    margin-bottom: 7px;
+}
+
+
+.you-avatar {
+
+    background: rgba(0, 108, 73, 0.1);
+
+    color: var(--green);
+}
+
+
+.aman-avatar {
+
+    background: #EAEDFF;
+
+    color: var(--purple);
+}
+
+
+.member-card h3 {
+
+    font-size: 14px;
+
+    line-height: 20px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.14px;
+
+    color: var(--dark);
+}
+
+
+.member-role {
+
+    margin-top: 2px;
+
+    font-size: 11px;
+
+    line-height: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.44px;
+
+    color: var(--text);
+}
+
+
+.positive-balance {
+
+    width: 100%;
+
+    margin-top: auto;
+
+    padding: 4px 8px;
+
+    border-radius: 999px;
+
+    border: 1px solid #4EDEA3;
+
+    text-align: center;
+
+    color: var(--green);
+
+    font-size: 12px;
+
+    line-height: 16px;
+
+    font-weight: 700;
+}
+
+
+.negative-text {
+
+    margin-top: 2px;
+
+    font-size: 11px;
+
+    line-height: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.44px;
+
+    color: var(--red);
+}
+
+
+.negative-balance {
+
+    width: 100%;
+
+    margin-top: auto;
+
+    padding: 4px 8px;
+
+    border-radius: 999px;
+
+    border: 1px solid #E61010;
+
+    text-align: center;
+
+    color: var(--red);
+
+    font-size: 12px;
+
+    line-height: 16px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   OUTLAY CARD
+========================================= */
+
+.outlay-card {
+
+    margin: 20px 16px 0;
+
+    padding: 16px;
+
+    background: white;
+
+    border-radius: 32px;
+
+    box-shadow:
+        0 2px 4px -2px rgba(0, 0, 0, 0.1),
+        0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+    overflow: hidden;
+}
+
+
+.small-label {
+
+    display: block;
+
+    font-size: 11px;
+
+    line-height: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.55px;
+
+    color: var(--text);
+}
+
+
+.total-amount {
+
+    margin-top: 3px;
+
+    font-size: 32px;
+
+    line-height: 38px;
+
+    font-weight: 800;
+
+    color: var(--dark);
+}
+
+
+/* =========================================
+   NET BALANCE
+========================================= */
+
+.net-balance {
+
+    margin-top: 16px;
+
+    padding: 16px;
+
+    border-radius: 16px;
+
+    background: linear-gradient(
+        167deg,
+        rgba(16, 185, 129, 0.25),
+        rgba(16, 185, 129, 0.15) 50%,
+        rgba(0, 108, 73, 0.1)
+    );
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+.balance-header {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 8px;
+}
+
+
+.balance-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+}
+
+
+.balance-icon-circle {
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: var(--green);
+
+    color: white;
+
+    font-size: 14px;
+}
+
+
+.balance-title .small-label {
+
+    letter-spacing: 0.28px;
+}
+
+
+.balance-title h3 {
+
+    margin-top: 1px;
+
+    font-size: 18px;
+
+    line-height: 24px;
+
+    font-weight: 700;
+
+    color: var(--green);
+}
+
+
+.credit-pill {
+
+    padding: 2px 8px;
+
+    border-radius: 999px;
+
+    background: rgba(0, 108, 73, 0.15);
+
+    color: #005236;
+
+    font-size: 11px;
+
+    line-height: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.44px;
+}
+
+
+.balance-description {
+
+    margin-top: 8px;
+
+    font-size: 12px;
+
+    line-height: 16px;
+
+    font-weight: 400;
+
+    color: var(--text);
+}
+
+
+.balance-actions {
+
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 8px;
+}
+
+
+.settle-button,
+.remind-button {
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    border: none;
+
+    border-radius: 999px;
+
+    padding: 0 16px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    line-height: 20px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.14px;
+
+    cursor: pointer;
+}
+
+
+.settle-button {
+
+    width: 115px;
+
+    background: var(--green);
+
+    color: white;
+
+    box-shadow: 0 4px 14px rgba(0, 108, 73, 0.25);
+}
+
+
+.remind-button {
+
+    background: var(--lavender);
+
+    color: var(--dark);
+}
+
+
+/* =========================================
+   MESSAGE CARD
+========================================= */
+
+.message-card {
+
+    margin: 16px;
+
+    padding: 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    border-radius: 32px;
+
+    background: var(--lavender);
+}
+
+
+.message-icon {
+
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(0, 108, 73, 0.2);
+
+    color: var(--green);
+
+    font-size: 22px;
+
+    font-weight: 700;
+}
+
+
+.message-card h2 {
+
+    font-size: 18px;
+
+    line-height: 24px;
+
+    font-weight: 600;
+
+    color: var(--dark);
+}
+
+
+.message-card p {
+
+    margin-top: 2px;
+
+    font-size: 12px;
+
+    line-height: 16px;
+
+    color: var(--text);
+}
+
+
+/* =========================================
+   RECENT EXPENSES
+========================================= */
+
+.recent-section {
+
+    padding: 16px 16px 0;
+}
+
+
+.recent-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+    margin-bottom: 8px;
+}
+
+
+.view-all {
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--green);
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    line-height: 16px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.24px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   EXPENSE CARD
+========================================= */
+
+.expense-card {
+
+    padding: 16px;
+
+    background: white;
+
+    border-radius: 16px;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+.expense-top {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+
+.expense-info {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    min-width: 0;
+}
+
+
+.expense-icon {
+
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 32px;
+
+    background: rgba(185, 5, 56, 0.1);
+
+    color: var(--red);
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+
+.expense-info h3 {
+
+    font-size: 18px;
+
+    line-height: 24px;
+
+    font-weight: 600;
+
+    color: var(--dark);
+}
+
+
+.paid-by {
+
+    margin-top: 2px;
+
+    font-size: 12px;
+
+    line-height: 16px;
+
+    font-weight: 600;
+
+    color: var(--dark);
+}
+
+
+.expense-date {
+
+    margin-top: 6px;
+
+    font-size: 12px;
+
+    line-height: 16px;
+
+    color: var(--text);
+}
+
+
+.expense-total {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    flex-shrink: 0;
+}
+
+
+.expense-total strong {
+
+    font-size: 18px;
+
+    line-height: 24px;
+
+    font-weight: 700;
+
+    color: var(--green);
+}
+
+
+.expense-total span {
+
+    font-size: 11px;
+
+    line-height: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.44px;
+
+    color: var(--text);
+}
+
+
+/* =========================================
+   EXPENSE DETAILS
+========================================= */
+
+.expense-details {
+
+    margin-top: 12px;
+
+    padding: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+    border-radius: 16px;
+
+    background: rgba(242, 243, 255, 0.6);
+}
+
+
+.share-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 12px;
+
+    line-height: 16px;
+}
+
+
+.share-label {
+
+    color: var(--text);
+}
+
+
+.share-info strong {
+
+    color: var(--dark);
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.people-split {
+
+    color: var(--text);
+}
+
+
+.expense-tag {
+
+    padding: 2px 8px;
+
+    border: 1px solid #E61010;
+
+    border-radius: 999px;
+
+    color: #BE123C;
+
+    font-size: 11px;
+
+    line-height: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.44px;
+}
+
+
+/* =========================================
+   ADD EXPENSE BUTTON
+========================================= */
+
+.add-expense-container {
+
+    padding: 18px 16px 30px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.add-expense-button {
+
+    width: 100%;
+
+    min-height: 39px;
+
+    padding: 0 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    border: none;
+
+    border-radius: 999px;
+
+    background: var(--green);
+
+    color: white;
+
+    box-shadow: 0 10px 25px rgba(0, 108, 73, 0.35);
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    line-height: 20px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.14px;
+
+    cursor: pointer;
+}
+
+
+.plus {
+
+    font-size: 20px;
+
+    line-height: 20px;
+}
+
+
+/*
+   IMPORTANT:
+   No scale animation.
+   No size change when clicked.
+*/
+
+.add-expense-button:hover,
+.add-expense-button:focus,
+.add-expense-button:active {
+
+    transform: none;
+
+    width: 100%;
+
+    min-height: 39px;
+
+    background: var(--green);
+}
+
+
+/* =========================================
+   BOTTOM NAVIGATION
+========================================= */
+
+.bottom-nav {
+
+    width: 100%;
+
+    max-width: 512px;
+
+    height: 87px;
+
+    margin: 0 auto;
+
+    padding: 0 19px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: relative;
+
+    background: var(--background);
+}
+
+
+.nav-item {
+
+    width: 56px;
+    height: 56px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 2px;
+
+    text-decoration: none;
+
+    color: var(--text);
+
+    font-size: 11px;
+
+    line-height: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.44px;
+}
+
+
+.nav-icon {
+
+    font-size: 19px;
+
+    line-height: 20px;
+}
+
+
+.nav-item.active {
+
+    color: var(--green);
+}
+
+
+/* =========================================
+   FLOATING PLUS BUTTON
+========================================= */
+
+.floating-button {
+
+    width: 56px;
+    height: 56px;
+
+    position: absolute;
+
+    left: 50%;
+
+    top: -4px;
+
+    transform: translateX(-50%);
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: var(--green-light);
+
+    color: #00422B;
+
+    font-size: 24px;
+
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.35);
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 380px) {
+
+    .navbar h1 {
+        font-size: 16px;
+    }
+
+    .group-info h2 {
+        font-size: 17px;
+    }
+
+    .section-heading h2,
+    .recent-heading h2 {
+        font-size: 17px;
+    }
+
+    .expense-info h3 {
+        font-size: 16px;
+    }
+
+    .expense-total strong {
+        font-size: 16px;
+    }
+
+    .status-pill {
+        font-size: 10px;
+    }
+
+    .balance-title h3 {
+        font-size: 16px;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+
+    body {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .navbar,
+    .main-content,
+    .bottom-nav {
+        width: 100%;
+
+        max-width: 512px;
+    }
+
+}

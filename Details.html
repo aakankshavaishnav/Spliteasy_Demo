@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SplitEasy - Group Details</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="Details.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="navbar">
+
+        <div class="header-left">
+
+            <button class="back-button" aria-label="Go back">
+                ←
+            </button>
+
+            <div class="brand">
+                <div class="brand-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <span class="divide-four">÷ 4</span>
+            </div>
+
+            <h1>Group Details</h1>
+
+        </div>
+
+        <div class="profile-small"></div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+
+        <!-- GROUP HEADER -->
+
+        <section class="group-header">
+
+            <div class="group-info">
+
+                <div class="group-icon">
+                    <span>✓</span>
+                </div>
+
+                <div>
+                    <h2>Goa Trip 🏖️</h2>
+
+                    <div class="group-meta">
+                        <span>♟</span>
+                        <span>5 members</span>
+                        <span>•</span>
+                        <span class="active-ledger">
+                            Active ledger
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="more-button">
+                ⋮
+            </button>
+
+        </section>
+
+
+
+        <!-- ================= ACTION TABS ================= -->
+
+        <section class="action-tabs">
+
+            <button class="action-tab active">
+                <span class="tab-icon">+</span>
+                Add Expense
+            </button>
+
+            <button class="action-tab">
+                <span class="tab-icon balance-icon">◉</span>
+                Balances
+            </button>
+
+            <button class="action-tab">
+                <span class="tab-icon">✓</span>
+                Settle Up
+            </button>
+
+        </section>
+
+
+
+        <!-- ================= MEMBER BALANCES ================= -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>Member Balances</h2>
+
+                    <p>
+                        Real-time fair-share breakdown
+                    </p>
+                </div>
+
+                <span class="status-pill">
+                    5 Settled/Pending
+                </span>
+
+            </div>
+
+
+            <div class="member-cards">
+
+                <!-- YOU -->
+
+                <div class="member-card">
+
+                    <div class="member-avatar you-avatar">
+                        You
+                    </div>
+
+                    <h3>You</h3>
+
+                    <span class="member-role">
+                        Group Leader
+                    </span>
+
+                    <div class="positive-balance">
+                        +₹2,150
+                    </div>
+
+                </div>
+
+
+                <!-- AMAN -->
+
+                <div class="member-card">
+
+                    <div class="member-avatar aman-avatar">
+                        A
+                    </div>
+
+                    <h3>Aman</h3>
+
+                    <span class="negative-text">
+                        Owes you ₹1,200
+                    </span>
+
+                    <div class="negative-balance">
+                        -₹1,200
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= TOTAL GROUP OUTLAY ================= -->
+
+        <section class="outlay-card">
+
+            <div class="outlay-header">
+
+                <div>
+                    <span class="small-label">
+                        TOTAL GROUP OUTLAY
+                    </span>
+
+                    <div class="total-amount">
+                        ₹42,600
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- NET BALANCE -->
+
+            <div class="net-balance">
+
+                <div class="balance-header">
+
+                    <div class="balance-title">
+
+                        <div class="balance-icon-circle">
+                            ✓
+                        </div>
+
+                        <div>
+                            <span class="small-label">
+                                YOUR NET BALANCE
+                            </span>
+
+                            <h3>
+                                You are owed ₹1,200
+                            </h3>
+                        </div>
+
+                    </div>
+
+                    <span class="credit-pill">
+                        In credit
+                    </span>
+
+                </div>
+
+
+                <p class="balance-description">
+                    1 friends owe you money directly. All calculations
+                    use optimized minimal-transfer routing.
+                </p>
+
+
+                <div class="balance-actions">
+
+                    <button class="settle-button">
+                        ✓
+                        <span>Settle Up</span>
+                    </button>
+
+                    <button class="remind-button">
+                        ◷
+                        <span>Remind</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= MESSAGE ================= -->
+
+        <section class="message-card">
+
+            <div class="message-icon">
+                ✓
+            </div>
+
+            <div>
+                <h2>No awkward money talks!</h2>
+
+                <p>
+                    just spliteasy,make us easy
+                </p>
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= RECENT EXPENSES ================= -->
+
+        <section class="recent-section">
+
+            <div class="recent-heading">
+
+                <div>
+                    <h2>Recent Expenses</h2>
+                </div>
+
+                <button class="view-all">
+                    View all (14) →
+                </button>
+
+            </div>
+
+
+            <!-- EXPENSE -->
+
+            <article class="expense-card">
+
+                <div class="expense-top">
+
+                    <div class="expense-info">
+
+                        <div class="expense-icon">
+                            $
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Fisherman's Wharf Seafood Dinner
+                            </h3>
+
+                            <p class="paid-by">
+                                Paid by You ₹4,800
+                            </p>
+
+                            <p class="expense-date">
+                                Yesterday, 9:30 PM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="expense-total">
+
+                        <strong>
+                            +₹3,840
+                        </strong>
+
+                        <span>
+                            owed to you
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EXPENSE DETAILS -->
+
+                <div class="expense-details">
+
+                    <div class="share-info">
+
+                        <span class="share-label">
+                            Your<br>share:
+                        </span>
+
+                        <strong>
+                            ₹960
+                        </strong>
+
+                        <span class="people-split">
+                            (5 people<br>split)
+                        </span>
+
+                    </div>
+
+
+                    <span class="expense-tag">
+                        Dinner &<br>
+                        Cocktails
+                    </span>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ================= ADD EXPENSE ================= -->
+
+        <div class="add-expense-container">
+
+            <button class="add-expense-button">
+
+                <span class="plus">
+                    +
+                </span>
+
+                <span>
+                    Add an Expense (Goa Trip)
+                </span>
+
+            </button>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ================= BOTTOM NAVIGATION ================= -->
+
+    <nav class="bottom-nav">
+
+        <a href="#" class="nav-item">
+
+            <span class="nav-icon">
+                ⌂
+            </span>
+
+            <span>
+                Home
+            </span>
+
+        </a>
+
+
+        <a href="#" class="nav-item">
+
+            <span class="nav-icon">
+                ♧
+            </span>
+
+            <span>
+                Friends
+            </span>
+
+        </a>
+
+
+        <button class="floating-button">
+            +
+        </button>
+
+
+        <a href="#" class="nav-item active">
+
+            <span class="nav-icon">
+                ▣
+            </span>
+
+            <span>
+                Groups
+            </span>
+
+        </a>
+
+
+        <a href="#" class="nav-item">
+
+            <span class="nav-icon">
+                ○
+            </span>
+
+            <span>
+                Profile
+            </span>
+
+        </a>
+
+    </nav>
+
+</body>
+</html>

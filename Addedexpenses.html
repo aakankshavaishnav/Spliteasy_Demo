@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SplitEasy - Expense Added</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Addedexpenses.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <div class="header-left">
+
+            <button class="back-btn" aria-label="Go back">
+                ←
+            </button>
+
+            <div class="logo">
+                <div class="logo-box logo-dark"></div>
+                <div class="logo-box logo-light">
+                    <span>÷</span>
+                </div>
+
+                <div class="logo-small">
+                    <span>÷ 4</span>
+                    <div class="logo-lines">
+                        <i></i>
+                        <i></i>
+                    </div>
+                </div>
+
+                <div class="brand-name">
+                    Expenses Saved
+                </div>
+            </div>
+
+        </div>
+
+        <div class="profile">
+            <span>AM</span>
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+    <main class="main-content">
+
+        <!-- Success Section -->
+        <section class="success-section">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h1>Expense Added!</h1>
+
+            <div class="added-to">
+                <span>Added to</span>
+                <strong>Goa Trip 🏖️</strong>
+            </div>
+
+        </section>
+
+
+        <!-- Cards -->
+        <div class="cards">
+
+
+            <!-- ================= EXPENSE CARD ================= -->
+            <section class="expense-card">
+
+                <div class="expense-header">
+
+                    <div>
+                        <p class="label">TOTAL EXPENSE</p>
+                        <h2>Cafe and Resturant</h2>
+                    </div>
+
+                    <div class="amount">
+                        <strong>₹3,450.00</strong>
+                        <span>INR</span>
+                    </div>
+
+                </div>
+
+
+                <div class="divider"></div>
+
+
+                <!-- Expense Information -->
+                <div class="expense-info">
+
+                    <div class="info-row">
+                        <div class="info-label">Paid By</div>
+
+                        <div class="info-value">
+                            <span class="green-dot"></span>
+                            You (Alex Morgan)
+                        </div>
+                    </div>
+
+
+                    <div class="info-row">
+                        <div class="info-label">Category</div>
+
+                        <div class="info-value">
+                            <span class="category-icon">◆</span>
+                            Food & Drinks
+                        </div>
+                    </div>
+
+
+                    <div class="info-row">
+                        <div class="info-label">Date</div>
+
+                        <div class="info-value">
+                            Today, 26 Feb 2026
+                        </div>
+                    </div>
+
+
+                    <div class="info-row">
+                        <div class="info-label">Division Rule</div>
+
+                        <div class="info-value">
+                            Equal Split (4 ways)
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Split Summary -->
+                <div class="split-summary">
+
+                    <div class="members">
+                        <span class="member-icon">▰</span>
+                        <span>4 members involved</span>
+                    </div>
+
+                    <div class="per-person">
+                        ₹862.50 / person
+                    </div>
+
+                </div>
+
+
+                <!-- Receipt -->
+                <div class="receipt">
+
+                    <div class="receipt-left">
+
+                        <div class="receipt-image">
+                            <span>📄</span>
+                        </div>
+
+                        <div>
+                            <strong>Receipt Attached</strong>
+                            <p>Mambo_Bill_2602.jpg • 1.4 MB</p>
+                        </div>
+
+                    </div>
+
+                    <button class="view-btn">
+                        View
+                        <span>⌄</span>
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= LEDGER CARD ================= -->
+            <section class="ledger-card">
+
+                <div class="ledger-header">
+
+                    <div class="ledger-title">
+                        <div class="ledger-icon">✓</div>
+                        <strong>Ledger Updated</strong>
+                    </div>
+
+                    <span class="active-badge">
+                        Active
+                    </span>
+
+                </div>
+
+
+                <!-- Balance -->
+                <div class="balance-box">
+
+                    <p>Your updated balance in Goa Trip:</p>
+
+                    <div class="balance-value">
+                        <strong>+₹2,150.00</strong>
+
+                        <span>
+                            You are owed
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <!-- Notification -->
+                <div class="notification-section">
+
+                    <div class="notification-header">
+
+                        <span>
+                            Group members notified
+                        </span>
+
+                        <strong>
+                            ✓ WhatsApp & Push
+                        </strong>
+
+                    </div>
+
+
+                    <div class="notification-users">
+
+                        <div class="avatars">
+                            <span>AM</span>
+                            <span>R</span>
+                            <span>S</span>
+                        </div>
+
+                        <div class="notification-text">
+                            <strong>Aman, Rahul, Sneha</strong>
+                            <p>₹862.50 split link delivered</p>
+                        </div>
+
+                        <span class="notification-check">
+                            ✓
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- ================= ACTION BUTTONS ================= -->
+
+        <section class="actions">
+
+            <button class="save-btn">
+                Save Expense (₹3,450.00)
+            </button>
+
+            <button class="whatsapp-btn">
+                <span>◉</span>
+                Share Receipt to WhatsApp Group
+            </button>
+
+            <button class="another-btn">
+                <span>＋</span>
+                Add Another Expense
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= BOTTOM NAVIGATION ================= -->
+
+    <nav class="bottom-nav">
+
+        <a href="#" class="nav-item">
+            <span class="nav-icon">⌂</span>
+            <span>Home</span>
+        </a>
+
+        <a href="#" class="nav-item">
+            <span class="nav-icon">♧</span>
+            <span>Friends</span>
+        </a>
+
+        <a href="#" class="nav-item active">
+            <span class="nav-icon">▰</span>
+            <span>Groups</span>
+        </a>
+
+        <a href="#" class="nav-item">
+            <span class="nav-icon">●</span>
+            <span>Profile</span>
+        </a>
+
+        <button class="floating-add">
+            +
+        </button>
+
+    </nav>
+
+</div>
+
+</body>
+</html>

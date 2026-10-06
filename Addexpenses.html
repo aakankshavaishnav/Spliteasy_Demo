@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SplitEasy - Add Expense</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Addexpenses.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <div class="header-left">
+
+            <button class="back-btn">‹</button>
+
+            <div class="logo">
+                <div class="logo-box logo-dark"></div>
+                <div class="logo-box logo-light"></div>
+                <span class="logo-divider">÷ 4</span>
+                <div class="logo-lines">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <h1>Add Expense</h1>
+
+        </div>
+
+        <div class="profile">
+            <span>Y</span>
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="content">
+
+
+        <!-- ================= CATEGORY ================= -->
+        <section class="category-section">
+
+            <div class="section-title-row">
+                <h2>Category</h2>
+                <span class="available">3 Available</span>
+            </div>
+
+            <div class="category-list">
+
+                <button class="category active">
+                    <span class="category-icon">🍴</span>
+                    Food & Drinks
+                </button>
+
+                <button class="category">
+                    Travel & Fuel
+                </button>
+
+                <button class="category">
+                    Stay/Hotel
+                </button>
+
+                <button class="category">
+                    <span class="insight-icon">◆</span>
+                    Insights
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BASIC DETAILS ================= -->
+        <section class="card details-card">
+
+            <div class="detail-row">
+
+                <div class="detail-label">
+                    <span class="detail-icon">▰</span>
+                    <span>Target Group</span>
+                </div>
+
+                <button class="select-pill purple">
+                    Goa Trip 🏖️
+                    <span>⌄</span>
+                </button>
+
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="detail-row">
+
+                <div class="detail-label">
+                    <span class="detail-icon">♙</span>
+                    <span>Paid by</span>
+                </div>
+
+                <button class="select-pill">
+
+                    <span class="avatar-small">Y</span>
+
+                    <span>You</span>
+
+                    <span>⌄</span>
+
+                </button>
+
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="detail-row">
+
+                <div class="detail-label">
+                    <span class="detail-icon">▣</span>
+                    <span>Date</span>
+                </div>
+
+                <button class="select-pill date">
+
+                    <span>Today, 26 Feb 2026</span>
+
+                    <span class="calendar-icon">▣</span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SPLIT ================= -->
+        <section class="card split-card">
+
+            <div class="split-top">
+
+                <div class="split-left">
+
+                    <div class="split-icon">÷</div>
+
+                    <span>Split Equally</span>
+
+                </div>
+
+                <div class="amount-person">
+
+                    <strong>₹862.50</strong>
+
+                    <span>/ person</span>
+
+                </div>
+
+            </div>
+
+            <button class="change-split">
+                Change split →
+            </button>
+
+        </section>
+
+
+        <!-- ================= AMOUNT ================= -->
+        <section class="amount-card">
+
+            <div class="currency">
+                <span>₹</span>
+                <span>Indian Rupee (INR)</span>
+            </div>
+
+            <div class="amount-input">
+
+                <span class="rupee">₹</span>
+
+                <span class="amount">3,450.00</span>
+
+            </div>
+
+            <div class="name-field">
+
+                <span class="name-icon">♙</span>
+
+                <span>Thickship</span>
+
+            </div>
+
+            <div class="amount-glow green-glow"></div>
+            <div class="amount-glow purple-glow"></div>
+
+        </section>
+
+
+        <!-- ================= BILL & RECEIPT ================= -->
+        <section class="card receipt-card">
+
+            <div class="receipt-header">
+
+                <div class="receipt-title">
+                    <span class="receipt-icon">▣</span>
+                    <span>Bill & Receipt</span>
+                </div>
+
+                <span class="attached">1 Attached</span>
+
+            </div>
+
+
+            <div class="receipt-content">
+
+                <div class="receipt-preview">
+
+                    <div class="receipt-image">
+                        <span class="preview-icon">▣</span>
+                        <span class="delete-icon">×</span>
+                    </div>
+
+                    <div class="upload-box">
+
+                        <div class="upload-icon">↑</div>
+
+                        <span>Add Photo / PDF</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="message-box">
+
+                    <span>✉</span>
+                    <span>Add optional massage</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ACTIONS ================= -->
+        <section class="actions">
+
+            <button class="more-options">
+                <span>More Options</span>
+                <span>⌄</span>
+            </button>
+
+            <button class="save-expense">
+                <span>
+                    Save Expenses (
+                    <b>₹</b>3,450.00)
+                </span>
+
+                <span>→</span>
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= BOTTOM NAVIGATION ================= -->
+    <nav class="bottom-nav">
+
+        <div class="nav-item">
+            <span class="nav-icon">⌂</span>
+            <span>Home</span>
+        </div>
+
+        <div class="nav-item">
+            <span class="nav-icon">♧</span>
+            <span>Friends</span>
+        </div>
+
+        <div class="nav-item active-nav">
+            <span class="nav-icon">▣</span>
+            <span>Groups</span>
+        </div>
+
+        <div class="nav-item">
+            <span class="nav-icon">●</span>
+            <span>Profile</span>
+        </div>
+
+        <button class="floating-add">+</button>
+
+    </nav>
+
+</div>
+
+</body>
+</html>

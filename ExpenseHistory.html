@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SplitEasy - Expense History</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="ExpenseHistory.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <div class="brand">
+            <div class="logo-mark">
+                <span>÷ 4</span>
+            </div>
+
+            <div class="brand-text">
+                <h1>SplitEasy</h1>
+                <p>Split bills, not friendships.</p>
+            </div>
+        </div>
+
+        <div class="header-actions">
+            <button class="notification-btn">♟</button>
+            <img src="https://placehold.co/32x32" class="profile-img" alt="Profile">
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+    <main class="main">
+
+        <!-- PAGE TITLE -->
+        <div class="page-title-row">
+
+            <div class="page-title">
+                <div class="title-icon">⌕</div>
+                <h2>Expense History</h2>
+            </div>
+
+            <button class="export-btn">
+                ⇩ <span>Export</span>
+            </button>
+
+        </div>
+
+
+        <!-- ================= TRIP SUMMARY ================= -->
+        <section class="trip-summary">
+
+            <div class="trip-heading">
+
+                <div class="trip-name">
+                    <span class="trip-emoji">🏖️</span>
+                    <h3>Goa Trip</h3>
+                    <span class="active-badge">Active</span>
+                </div>
+
+                <div class="members">
+                    <img src="https://placehold.co/28x28" alt="Member">
+                    <img src="https://placehold.co/28x28" alt="Member">
+                    <img src="https://placehold.co/28x28" alt="Member">
+                </div>
+
+            </div>
+
+
+            <div class="summary-stats">
+
+                <div class="stat">
+                    <span>Records</span>
+                    <strong>14 Total</strong>
+                </div>
+
+                <div class="stat">
+                    <span>Spent</span>
+                    <strong>₹42,600</strong>
+                </div>
+
+                <div class="stat settled">
+                    <span>Settled</span>
+                    <strong>₹3,840</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SEARCH ================= -->
+        <div class="search-box">
+
+            <span class="search-icon">⌕</span>
+
+            <input
+                type="text"
+                placeholder="Search receipts, notes, places..."
+            >
+
+            <span class="filter-icon">⚙</span>
+
+        </div>
+
+
+        <!-- ================= FILTERS ================= -->
+        <div class="filters">
+
+            <button class="filter active">
+                Category: All
+                <span>⌄</span>
+            </button>
+
+            <button class="filter">
+                Paid by: Anyone
+                <span>⌄</span>
+            </button>
+
+            <button class="filter">
+                Last 7 Days
+                <span>⌄</span>
+            </button>
+
+            <button class="filter">
+                Status: All
+                <span>⌄</span>
+            </button>
+
+        </div>
+
+
+        <!-- ================= TODAY ================= -->
+        <section class="date-section">
+
+            <div class="date-title today">
+                <span></span>
+                TODAY • 26 FEB 2026
+            </div>
+
+
+            <div class="timeline">
+
+                <article class="expense-card">
+
+                    <div class="expense-top">
+
+                        <div class="expense-info">
+
+                            <div class="expense-icon food">
+                                🍹
+                            </div>
+
+                            <div>
+                                <h3>Café Mambo Drinks & Starters</h3>
+
+                                <p>
+                                    🍹 Food & Drinks
+                                    <b>•</b>
+                                    <em>Paid by You</em>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="amount">
+                            <strong>₹3,450</strong>
+                            <span class="get">+₹2,250 get</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="expense-bottom">
+
+                        <div>
+                            <span>Your share:</span>
+                            <strong>₹1,200</strong>
+                        </div>
+
+                        <span class="status pending">
+                            <i></i>
+                            Pending Settlement
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= YESTERDAY ================= -->
+        <section class="date-section">
+
+            <div class="date-title yesterday">
+                <span></span>
+                YESTERDAY • 25 FEB 2026
+            </div>
+
+
+            <div class="timeline">
+
+                <!-- THAR FUEL -->
+                <article class="expense-card">
+
+                    <div class="expense-top">
+
+                        <div class="expense-info">
+
+                            <div class="expense-icon travel">
+                                ⛽
+                            </div>
+
+                            <div>
+                                <h3>Self-drive Thar Fuel</h3>
+
+                                <p>
+                                    ⛽ Travel
+                                    <b>•</b>
+                                    Paid by Aman
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="amount">
+                            <strong>₹3,600</strong>
+                            <span class="owe">-₹720 owe</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="expense-bottom">
+
+                        <div>
+                            <span>Your share:</span>
+                            <strong>₹720</strong>
+                        </div>
+
+                        <span class="status pending">
+                            <i></i>
+                            Pending Settlement
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SEAFOOD -->
+                <article class="expense-card">
+
+                    <div class="expense-top">
+
+                        <div class="expense-info">
+
+                            <div class="expense-icon food">
+                                🦞
+                            </div>
+
+                            <div>
+                                <h3>Fisherman's Wharf Seafood Feast</h3>
+
+                                <p>
+                                    🦞 Food & Drinks
+                                    <b>•</b>
+                                    <em>Paid by You</em>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="amount">
+                            <strong>₹4,800</strong>
+                            <span class="get">+₹3,840 get</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="expense-bottom">
+
+                        <div>
+                            <span>Your share:</span>
+                            <strong>₹960</strong>
+                        </div>
+
+                        <span class="status partial">
+                            <i></i>
+                            Partially Settled (2/4 paid)
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= 24 FEB ================= -->
+        <section class="date-section">
+
+            <div class="date-title older">
+                <span></span>
+                24 FEB 2026
+            </div>
+
+
+            <div class="timeline">
+
+                <!-- SETTLEMENT -->
+                <article class="expense-card settlement-card">
+
+                    <div class="expense-top">
+
+                        <div class="expense-info">
+
+                            <div class="expense-icon settlement">
+                                💳
+                            </div>
+
+                            <div>
+                                <h3>Sneha paid Aman</h3>
+
+                                <p>
+                                    💳 Settlement
+                                    <b>•</b>
+                                    Transfer via UPI
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="amount">
+                            <strong>₹2,400</strong>
+                            <span>Direct</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="settlement-bottom">
+
+                        <span>Peer balance reduced</span>
+
+                        <span class="settled-badge">
+                            ✓ Settled
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- VILLA -->
+                <article class="expense-card">
+
+                    <div class="expense-top">
+
+                        <div class="expense-info">
+
+                            <div class="expense-icon villa">
+                                🏖️
+                            </div>
+
+                            <div>
+                                <h3>Beach Villa Stay (Booking Advance)</h3>
+
+                                <p>
+                                    🏖️ Accommodation
+                                    <b>•</b>
+                                    Paid by Sneha
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="amount">
+                            <strong>₹16,000</strong>
+                            <span class="owe">-₹3,200 owe</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="expense-bottom">
+
+                        <div>
+                            <span>Your share:</span>
+                            <strong>₹3,200</strong>
+                        </div>
+
+                        <span class="status locked">
+                            🔒 Audited & Locked
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= END LEDGER ================= -->
+        <div class="ledger">
+
+            <div class="ledger-icon">♟</div>
+
+            <div>
+                <strong>End of Trip Ledger</strong>
+                <p>Showing all 5 recent active records</p>
+            </div>
+
+            <button>View All</button>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= BOTTOM NAV ================= -->
+    <nav class="bottom-nav">
+
+        <a href="#">
+            <span>⌂</span>
+            <small>Home</small>
+        </a>
+
+        <a href="#">
+            <span>♙</span>
+            <small>Friends</small>
+        </a>
+
+        <button class="add-btn">+</button>
+
+        <a href="#">
+            <span>♧</span>
+            <small>Groups</small>
+        </a>
+
+        <a href="#">
+            <span>○</span>
+            <small>Profile</small>
+        </a>
+
+    </nav>
+
+</div>
+
+</body>
+</html>

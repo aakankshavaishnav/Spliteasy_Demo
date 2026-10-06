@@ -1,0 +1,1253 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    background: #FAF8FF;
+
+    color: #131B2E;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+/* =====================================================
+   APP
+===================================================== */
+
+.app {
+    width: 100%;
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    background: #FAF8FF;
+
+    overflow-x: hidden;
+}
+
+
+/* =====================================================
+   FULL WIDTH HEADER
+===================================================== */
+
+.header {
+    width: 100%;
+    height: 64px;
+
+    background: rgba(250, 248, 255, 0.80);
+
+    box-shadow:
+        0 1px 8px rgba(0, 0, 0, 0.04);
+
+    backdrop-filter: blur(12px);
+}
+
+
+/*
+   Header inner controls the content width,
+   while the actual header remains 100% width.
+*/
+
+.header-inner {
+    width: 100%;
+    max-width: 1200px;
+
+    height: 64px;
+
+    margin: 0 auto;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* =====================================================
+   HEADER LEFT
+===================================================== */
+
+.header-left {
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+}
+
+.back-button {
+    width: 44px;
+    height: 44px;
+
+    border: none;
+
+    background: transparent;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #131B2E;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo {
+    width: 68px;
+    height: 38px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.logo-box {
+    position: absolute;
+
+    border-radius: 7px;
+}
+
+.logo-dark {
+    width: 32px;
+    height: 30px;
+
+    left: 2px;
+    top: 4px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(1, 126, 26, 0.60) 0%,
+            #017E1A 100%
+        );
+}
+
+.logo-light {
+    width: 32px;
+    height: 32px;
+
+    left: 17px;
+    top: 3px;
+
+    background: rgba(1, 126, 26, 0.30);
+}
+
+.logo-divider {
+    position: absolute;
+
+    width: 8px;
+    height: 1px;
+
+    left: 39px;
+    top: 18px;
+
+    background: #0FA37F;
+
+    border-radius: 1px;
+}
+
+.logo-text {
+    position: absolute;
+
+    left: 46px;
+    top: 11px;
+
+    color: #0FA37F;
+
+    font-family: Inter, sans-serif;
+
+    font-size: 5.12px;
+
+    font-weight: 400;
+}
+
+.header h1 {
+    margin-left: 4px;
+
+    color: #131B2E;
+
+    font-size: 18px;
+
+    line-height: 24px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.header-avatar {
+    width: 32px;
+    height: 32px;
+
+    margin-right: 4px;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+
+.main-content {
+    width: 100%;
+
+    max-width: 512px;
+
+    margin: 0 auto;
+
+    padding: 8px 16px 32px;
+}
+
+
+/* =====================================================
+   TRIP SUMMARY
+===================================================== */
+
+.trip-summary {
+    width: 100%;
+
+    padding: 16px;
+
+    margin-bottom: 16px;
+
+    background: #FFFFFF;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.trip-info {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.trip-icon {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #6FFBBE;
+
+    color: #005236;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 14px;
+}
+
+.trip-details {
+    min-width: 0;
+}
+
+.trip-title-row {
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+}
+
+.trip-title-row h2 {
+    color: #131B2E;
+
+    font-size: 18px;
+
+    line-height: 24px;
+
+    font-weight: 600;
+}
+
+.category-badge {
+    padding: 2px 8px;
+
+    background: #E2E7FF;
+
+    border-radius: 999px;
+
+    color: #3C4A42;
+
+    font-size: 11px;
+
+    line-height: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.44px;
+}
+
+.trip-details p {
+    margin-top: 1px;
+
+    color: #3C4A42;
+
+    font-size: 12px;
+
+    line-height: 16px;
+
+    font-weight: 400;
+
+    white-space: nowrap;
+}
+
+.bill-total {
+    flex-shrink: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+}
+
+.bill-total span {
+    color: #3C4A42;
+
+    font-size: 11px;
+
+    line-height: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.55px;
+}
+
+.bill-total strong {
+    margin-top: 2px;
+
+    color: #006C49;
+
+    font-size: 22px;
+
+    line-height: 28px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   SPLIT TABS
+===================================================== */
+
+.split-tabs {
+    width: 100%;
+    height: 40px;
+
+    margin-bottom: 16px;
+
+    padding: 4px;
+
+    background: #EAEDFF;
+
+    border-radius: 999px;
+
+    box-shadow:
+        inset 0 2px 4px rgba(0, 0, 0, 0.05);
+
+    display: grid;
+
+    grid-template-columns:
+        0.85fr
+        1.45fr
+        1.35fr
+        0.85fr;
+
+    gap: 2px;
+}
+
+.split-tab {
+    border: none;
+
+    background: transparent;
+
+    border-radius: 999px;
+
+    color: #3C4A42;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+    font-size: 12px;
+
+    line-height: 16px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.24px;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+}
+
+.split-tab.active {
+    background: #FFFFFF;
+
+    color: #131B2E;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 4px;
+}
+
+.active-dot {
+    width: 6px;
+    height: 6px;
+
+    background: #10B981;
+
+    border-radius: 50%;
+}
+
+
+/* =====================================================
+   ASSIGNMENT CARD
+===================================================== */
+
+.assignment-card {
+    width: 100%;
+
+    padding: 16px;
+
+    margin-bottom: 16px;
+
+    background: #FFFFFF;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.assignment-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.assigned-info {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 4px;
+}
+
+.green-dot {
+    width: 9px;
+    height: 10px;
+
+    margin-top: 3px;
+
+    flex-shrink: 0;
+
+    background: #10B981;
+
+    border-radius: 999px;
+}
+
+.assigned-info p {
+    display: flex;
+
+    flex-direction: column;
+
+    color: #3C4A42;
+
+    font-size: 12px;
+
+    line-height: 16px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.24px;
+}
+
+.assigned-info strong:first-child {
+    color: #131B2E;
+}
+
+.remaining-badge {
+    padding: 4px 10px;
+
+    background: rgba(111, 251, 190, 0.4);
+
+    border-radius: 999px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+
+    color: #005236;
+
+    font-size: 11px;
+
+    line-height: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.44px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+
+    background: #EAEDFF;
+
+    border-radius: 999px;
+
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 100%;
+    height: 100%;
+
+    background: #006C49;
+}
+
+.assignment-actions {
+    padding-top: 4px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+}
+
+.assignment-actions button {
+    min-height: 30px;
+
+    padding: 4px 10px;
+
+    border: none;
+
+    border-radius: 999px;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+    font-size: 11px;
+
+    line-height: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.44px;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+}
+
+.reset-button {
+    background: #F2F3FF;
+
+    color: #3C4A42;
+}
+
+.remaining-button {
+    background: rgba(111, 251, 190, 0.3);
+
+    color: #006C49;
+}
+
+
+/* =====================================================
+   PARTICIPANTS
+===================================================== */
+
+.participants {
+    width: 100%;
+
+    margin-bottom: 24px;
+}
+
+.section-heading {
+    width: 100%;
+
+    padding: 0 4px;
+
+    margin-bottom: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.section-heading h2 {
+    color: #131B2E;
+
+    font-size: 14px;
+
+    line-height: 20px;
+
+    font-weight: 600;
+}
+
+.section-heading span {
+    color: #3C4A42;
+
+    font-size: 11px;
+
+    line-height: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.44px;
+}
+
+
+/* =====================================================
+   PARTICIPANT CARD
+===================================================== */
+
+.participant-card {
+    width: 100%;
+    min-height: 76px;
+
+    padding: 16px;
+
+    margin-bottom: 8px;
+
+    background: #FFFFFF;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+}
+
+.participant-info {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.participant-avatar {
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.avatar-wrapper {
+    position: relative;
+
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+}
+
+.payer-label {
+    position: absolute;
+
+    left: 5px;
+    top: 28px;
+
+    height: 20px;
+
+    padding: 0 6px;
+
+    background: #006C49;
+
+    border-radius: 999px;
+
+    color: #FFFFFF;
+
+    font-size: 9px;
+
+    line-height: 20px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.45px;
+}
+
+.person-details {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.person-name-row {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+}
+
+.person-name-row h3,
+.person-details > h3 {
+    color: #131B2E;
+
+    font-size: 18px;
+
+    line-height: 24px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.percentage {
+    padding: 2px 6px;
+
+    background: #E2E7FF;
+
+    border-radius: 999px;
+
+    color: #3C4A42;
+
+    font-size: 10px;
+
+    line-height: 20px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.green-percentage {
+    background: #6FFBBE;
+
+    color: #002113;
+}
+
+.person-details p {
+    color: #3C4A42;
+
+    font-size: 12px;
+
+    line-height: 16px;
+
+    font-weight: 400;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   AMOUNT
+===================================================== */
+
+.amount-box {
+    width: 112px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    padding: 8px 12px;
+
+    background: #F2F3FF;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 3px;
+}
+
+.amount-box span,
+.amount-box strong {
+    font-size: 18px;
+
+    line-height: 24px;
+
+    font-weight: 600;
+}
+
+.amount-box span {
+    color: #3C4A42;
+}
+
+.amount-box strong {
+    color: #131B2E;
+}
+
+
+/* =====================================================
+   EXCLUDED
+===================================================== */
+
+.participant-card.excluded {
+    opacity: 0.65;
+
+    background: rgba(242, 243, 255, 0.7);
+}
+
+.excluded-name {
+    text-decoration: line-through;
+}
+
+.italic {
+    font-style: italic !important;
+}
+
+.excluded-icon {
+    position: absolute;
+
+    right: -1px;
+    bottom: -1px;
+
+    width: 15px;
+    height: 15px;
+
+    background: #DAE2FD;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #3C4A42;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.excluded-amount {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #3C4A42;
+
+    font-size: 18px;
+
+    line-height: 24px;
+
+    font-weight: 500;
+}
+
+.remove-button {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    background: #EAEDFF;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #3C4A42;
+
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   FINAL SECTION
+===================================================== */
+
+.final-section {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.net-card {
+    width: 100%;
+
+    padding: 16px;
+
+    background: #FFFFFF;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.net-row {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+}
+
+.net-row span {
+    color: #3C4A42;
+
+    font-size: 12px;
+
+    line-height: 16px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.24px;
+}
+
+.net-row strong {
+    color: #006C49;
+
+    font-size: 18px;
+
+    line-height: 24px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.net-row.secondary {
+    padding-top: 4px;
+}
+
+.net-row.secondary span {
+    font-weight: 400;
+
+    letter-spacing: 0;
+}
+
+.net-row.secondary strong {
+    color: #131B2E;
+
+    font-size: 12px;
+
+    line-height: 16px;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   CONFIRM BUTTON
+===================================================== */
+
+.confirm-button {
+    width: 100%;
+    height: 56px;
+
+    border: none;
+
+    border-radius: 999px;
+
+    background: #006C49;
+
+    box-shadow:
+        0 8px 20px rgba(0, 108, 73, 0.28);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    color: #FFFFFF;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+    font-size: 14px;
+
+    line-height: 20px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.14px;
+
+    cursor: pointer;
+}
+
+.check-icon {
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   BOTTOM NAVIGATION
+===================================================== */
+
+.bottom-navigation {
+    width: 100%;
+
+    max-width: 512px;
+
+    height: 62px;
+
+    margin: 0 auto;
+
+    padding: 0 19px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: #FAF8FF;
+}
+
+
+/* =====================================================
+   NAV ITEMS
+===================================================== */
+
+.nav-item {
+    width: 56px;
+    height: 56px;
+
+    text-decoration: none;
+
+    border-radius: 999px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 2px;
+
+    color: #3C4A42;
+
+    font-size: 11px;
+
+    line-height: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.44px;
+}
+
+.nav-icon {
+    height: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    font-size: 20px;
+
+    line-height: 20px;
+}
+
+.nav-item.active {
+    color: #006C49;
+}
+
+
+/* =====================================================
+   FLOATING BUTTON
+===================================================== */
+
+.floating-button {
+    width: 56px;
+    height: 56px;
+
+    position: absolute;
+
+    left: 50%;
+    top: -17px;
+
+    transform: translateX(-50%);
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #10B981;
+
+    box-shadow:
+        0 8px 20px rgba(16, 185, 129, 0.35);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #00422B;
+
+    font-size: 26px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .header-inner {
+        padding: 0 8px;
+    }
+
+    .main-content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header h1 {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 380px) {
+
+    .main-content {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .trip-summary {
+        padding: 12px;
+    }
+
+    .trip-title-row h2 {
+        font-size: 16px;
+    }
+
+    .bill-total strong {
+        font-size: 19px;
+    }
+
+    .split-tab {
+        font-size: 10px;
+    }
+
+    .person-name-row h3,
+    .person-details > h3 {
+        font-size: 16px;
+    }
+
+    .amount-box {
+        width: 100px;
+    }
+
+    .amount-box strong,
+    .amount-box span {
+        font-size: 16px;
+    }
+}

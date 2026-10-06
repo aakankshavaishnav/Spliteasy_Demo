@@ -1,0 +1,644 @@
+/* ==============================
+   GENERAL
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FAF8FF;
+    color: #131B2E;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+/* ==============================
+   HEADER
+================================ */
+
+.header {
+    width: 100%;
+    height: 64px;
+
+    padding: 0 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(250, 248, 255, 0.8);
+
+    box-shadow:
+        0 1px 8px rgba(0, 0, 0, 0.04);
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* Brand */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.brand-text h2 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.brand-text p {
+    color: #3C4A42;
+
+    font-size: 11px;
+    line-height: 14px;
+
+    font-weight: 700;
+    letter-spacing: 0.44px;
+}
+
+
+/* ==============================
+   LOGO
+================================ */
+
+.logo {
+    width: 32px;
+    height: 32px;
+
+    position: relative;
+
+    border-radius: 7px;
+
+    overflow: hidden;
+}
+
+.logo-shape {
+    position: absolute;
+
+    width: 32px;
+    height: 30px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(1, 126, 26, 0.6),
+            #017E1A
+        );
+
+    border-radius: 7px;
+}
+
+.logo-overlay {
+    position: absolute;
+
+    width: 32px;
+    height: 32px;
+
+    background: rgba(1, 126, 26, 0.3);
+
+    border-radius: 7px;
+}
+
+.logo-line {
+    position: absolute;
+
+    height: 1px;
+
+    background: #0FA37F;
+
+    border-radius: 1px;
+}
+
+.line-one {
+    width: 8px;
+    top: 10px;
+    left: 12px;
+}
+
+.line-two {
+    width: 6px;
+    top: 15px;
+    left: 12px;
+}
+
+.divide {
+    position: absolute;
+
+    left: 11px;
+    top: 20px;
+
+    color: #0FA37F;
+
+    font-family: Inter, sans-serif;
+
+    font-size: 5px;
+}
+
+
+/* Profile */
+
+.profile-icon {
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #3C4A42;
+
+    font-size: 18px;
+}
+
+
+/* ==============================
+   MAIN
+================================ */
+
+main {
+    width: 100%;
+}
+
+.login-section {
+    width: 100%;
+    max-width: 402px;
+
+    margin: 0 auto;
+
+    padding: 29px 16px 32px;
+}
+
+
+/* ==============================
+   WELCOME
+================================ */
+
+.welcome {
+    height: 160px;
+
+    text-align: center;
+
+    position: relative;
+}
+
+.main-logo {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 8px;
+}
+
+.main-logo-inner {
+    width: 64px;
+    height: 64px;
+
+    padding: 8px;
+
+    position: relative;
+
+    background: white;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 10px 15px -3px rgba(16, 185, 129, 0.2),
+        0 4px 6px -4px rgba(16, 185, 129, 0.2);
+
+    overflow: hidden;
+}
+
+.main-logo-inner .logo-shape {
+    width: 44px;
+    height: 45px;
+
+    left: 8px;
+    top: 8px;
+}
+
+.main-logo-inner .logo-overlay {
+    width: 44px;
+    height: 48px;
+
+    left: 8px;
+    top: 8px;
+}
+
+.main-logo-inner .line-one {
+    width: 11px;
+
+    left: 25px;
+    top: 18px;
+}
+
+.main-logo-inner .line-two {
+    width: 8px;
+
+    left: 25px;
+    top: 23px;
+}
+
+.main-logo-inner .divide {
+    left: 24px;
+    top: 30px;
+
+    font-size: 5px;
+}
+
+
+.welcome h1 {
+    font-size: 22px;
+    line-height: 28px;
+
+    font-weight: 700;
+
+    margin-bottom: 4px;
+}
+
+.welcome p {
+    color: #3C4A42;
+
+    font-size: 14px;
+    line-height: 20px;
+
+    font-weight: 400;
+}
+
+
+/* ==============================
+   LOGIN CARD
+================================ */
+
+.login-card {
+    width: 100%;
+
+    padding: 32px 24px 24px;
+
+    background: white;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 4px 24px rgba(19, 27, 46, 0.06);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+
+/* ==============================
+   SOCIAL BUTTONS
+================================ */
+
+.social-button {
+    width: 100%;
+    height: 48px;
+
+    border-radius: 999px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* Google */
+
+.google {
+    background: white;
+
+    border: 1px solid black;
+
+    color: #131B2E;
+}
+
+.google-icon {
+    font-family: Arial, sans-serif;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #4285F4;
+}
+
+
+/* Apple */
+
+.apple {
+    background: #283044;
+
+    border: none;
+
+    color: #EEF0FF;
+}
+
+.apple-icon {
+    font-size: 16px;
+    color: white;
+}
+
+
+/* ==============================
+   DIVIDER
+================================ */
+
+.divider {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    margin: 4px 0;
+}
+
+.divider span {
+    flex: 1;
+
+    height: 1px;
+
+    background: #E2E7FF;
+}
+
+.divider p {
+    padding: 0 12px;
+
+    color: #3C4A42;
+
+    background: white;
+
+    font-size: 12px;
+
+    line-height: 16px;
+
+    white-space: nowrap;
+}
+
+
+/* ==============================
+   FORM
+================================ */
+
+.form-group {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.form-group label,
+.password-label label {
+    padding-left: 4px;
+
+    color: #3C4A42;
+
+    font-size: 12px;
+
+    line-height: 16px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.24px;
+}
+
+
+/* Password heading */
+
+.password-label {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.password-label a {
+    color: #006C49;
+
+    font-size: 11px;
+
+    line-height: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.44px;
+
+    text-decoration: none;
+}
+
+
+/* Input */
+
+.input-box {
+    width: 100%;
+
+    min-height: 48px;
+
+    padding: 0 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    background: #F2F3FF;
+
+    border-radius: 16px;
+}
+
+.input-icon {
+    color: #6C7A71;
+
+    font-size: 16px;
+}
+
+.input-box input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #131B2E;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+    font-size: 14px;
+
+    line-height: 20px;
+}
+
+.input-box input::placeholder {
+    color: #6C7A71;
+}
+
+.show-password {
+    border: none;
+
+    background: transparent;
+
+    color: #6C7A71;
+
+    cursor: pointer;
+}
+
+
+/* ==============================
+   REMEMBER CHECKBOX
+================================ */
+
+.remember {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 4px;
+
+    color: #3C4A42;
+
+    font-size: 12px;
+
+    line-height: 16px;
+
+    font-weight: 400;
+
+    cursor: pointer;
+}
+
+.remember input {
+    width: 16px;
+    height: 16px;
+
+    cursor: pointer;
+}
+
+
+/* ==============================
+   LOGIN BUTTON
+================================ */
+
+.login-button {
+    width: 100%;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 999px;
+
+    background: #000;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.14px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(16, 185, 129, 0.25);
+
+    transition: 0.2s ease;
+}
+
+.login-button:hover {
+    transform: translateY(-1px);
+
+    background: #006C49;
+}
+
+.arrow {
+    font-size: 16px;
+}
+
+
+/* ==============================
+   CREATE ACCOUNT
+================================ */
+
+.create-account {
+    padding-top: 16px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    font-size: 14px;
+
+    line-height: 20px;
+}
+
+.create-account span {
+    color: #3C4A42;
+}
+
+.create-account a {
+    color: #006C49;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+/* ==============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 430px) {
+
+    .login-section {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .login-card {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}

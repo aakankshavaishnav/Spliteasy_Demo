@@ -1,0 +1,1072 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FAF8FF;
+    color: #131B2E;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+button {
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+
+/* =========================
+   APP
+========================= */
+
+.app {
+    width: 100%;
+    min-height: 100vh;
+    background: #FAF8FF;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 64px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(250, 248, 255, 0.8);
+
+    box-shadow:
+        0 1px 8px rgba(0, 0, 0, 0.04);
+
+    backdrop-filter: blur(12px);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+
+/* Back Button */
+
+.back-btn {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+
+    font-size: 20px;
+    color: #131B2E;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-box {
+    width: 32px;
+    height: 32px;
+    border-radius: 7px;
+}
+
+.logo-dark {
+    background: linear-gradient(
+        180deg,
+        rgba(1, 126, 26, 0.6),
+        #017E1A
+    );
+}
+
+.logo-light {
+    background: rgba(1, 126, 26, 0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-light span {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo-small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -2px;
+}
+
+.logo-small span {
+    color: #0FA37F;
+    font-family: Inter, sans-serif;
+    font-size: 5.12px;
+}
+
+.logo-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 1px;
+}
+
+.logo-lines i {
+    display: block;
+    width: 8px;
+    height: 1px;
+    background: #0FA37F;
+}
+
+.logo-lines i:last-child {
+    width: 6px;
+}
+
+.brand-name {
+    margin-left: 3px;
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+
+/* Profile */
+
+.profile {
+    width: 32px;
+    height: 32px;
+
+    margin-right: 4px;
+
+    border-radius: 50%;
+    background: #EAEDFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #131B2E;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-content {
+    width: 100%;
+    max-width: 512px;
+
+    margin: 0 auto;
+
+    padding: 20px 12px 20px;
+}
+
+
+/* =========================
+   SUCCESS SECTION
+========================= */
+
+.success-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 8px;
+
+    padding-top: 4px;
+    margin-bottom: 24px;
+}
+
+
+/* Success Circle */
+
+.success-icon {
+    width: 64px;
+    height: 64px;
+
+    border-radius: 50%;
+
+    background: #10B981;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    box-shadow:
+        0 10px 15px -3px rgba(16, 185, 129, 0.3),
+        0 4px 6px -4px rgba(16, 185, 129, 0.3);
+}
+
+
+/* Heading */
+
+.success-section h1 {
+    margin-top: 4px;
+
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 800;
+
+    text-align: center;
+}
+
+
+/* Added To */
+
+.added-to {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 4px 12px;
+
+    background: #E2E7FF;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+
+    letter-spacing: 0.24px;
+}
+
+.added-to span {
+    color: #3C4A42;
+}
+
+.added-to strong {
+    color: #131B2E;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+/* =========================
+   EXPENSE CARD
+========================= */
+
+.expense-card {
+    padding: 24px;
+
+    background: white;
+
+    border-radius: 32px;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Expense Header */
+
+.expense-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 15px;
+}
+
+.label {
+    color: #3C4A42;
+
+    font-family: FreeSans, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+
+    line-height: 14px;
+    letter-spacing: 0.55px;
+
+    margin-bottom: 2px;
+}
+
+.expense-header h2 {
+    color: #131B2E;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 24px;
+}
+
+.amount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.amount strong {
+    color: #006C49;
+
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+.amount span {
+    margin-top: 4px;
+
+    color: #3C4A42;
+
+    font-family: FreeSans, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+
+    line-height: 14px;
+    letter-spacing: 0.44px;
+}
+
+
+/* Divider */
+
+.divider {
+    width: 100%;
+    height: 1px;
+
+    background: #EAEDFF;
+
+    margin: 16px 0;
+}
+
+
+/* =========================
+   INFO
+========================= */
+
+.expense-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-row {
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 10px;
+}
+
+.info-row:last-child {
+    padding-bottom: 0;
+}
+
+.info-label {
+    color: #3C4A42;
+
+    font-family: FreeSans, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+
+    line-height: 14px;
+    letter-spacing: 0.44px;
+
+    margin-bottom: 2px;
+}
+
+.info-value {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    color: #131B2E;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    line-height: 20px;
+}
+
+.green-dot {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+    background: #10B981;
+}
+
+.category-icon {
+    color: #494BD6;
+    font-size: 12px;
+}
+
+
+/* =========================
+   SPLIT SUMMARY
+========================= */
+
+.split-summary {
+    margin-top: 16px;
+
+    padding: 12px;
+
+    background: #F2F3FF;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.members {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #3C4A42;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    line-height: 16px;
+}
+
+.member-icon {
+    color: #006C49;
+}
+
+.per-person {
+    padding: 2px 10px;
+
+    background: white;
+
+    border-radius: 999px;
+
+    color: #131B2E;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 20px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   RECEIPT
+========================= */
+
+.receipt {
+    margin-top: 8px;
+
+    padding: 10px;
+
+    background: #EAEDFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.receipt-left {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    min-width: 0;
+}
+
+.receipt-image {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    background: #DAE2FD;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+}
+
+.receipt-left strong {
+    display: block;
+
+    color: #131B2E;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    line-height: 16px;
+    letter-spacing: 0.24px;
+}
+
+.receipt-left p {
+    color: #3C4A42;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    line-height: 16px;
+
+    white-space: nowrap;
+}
+
+.view-btn {
+    padding: 6px 12px;
+
+    flex-shrink: 0;
+
+    background: white;
+
+    border-radius: 999px;
+
+    color: #006C49;
+
+    font-family: FreeSans, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+
+    line-height: 14px;
+    letter-spacing: 0.44px;
+}
+
+
+/* =========================
+   LEDGER CARD
+========================= */
+
+.ledger-card {
+    padding: 24px;
+
+    background:
+        linear-gradient(
+            152deg,
+            rgba(111, 251, 190, 0.30) 0%,
+            white 50%,
+            #F2F3FF 100%
+        );
+
+    border-radius: 32px;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Ledger Header */
+
+.ledger-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ledger-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ledger-icon {
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 108, 73, 0.10);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #006C49;
+
+    font-size: 14px;
+}
+
+.ledger-title strong {
+    color: #131B2E;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    line-height: 20px;
+    letter-spacing: 0.14px;
+}
+
+.active-badge {
+    padding: 2px 10px;
+
+    background: #6FFBBE;
+
+    border-radius: 999px;
+
+    color: #002113;
+
+    font-family: FreeSans, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+
+    line-height: 14px;
+}
+
+
+/* =========================
+   BALANCE BOX
+========================= */
+
+.balance-box {
+    margin-top: 16px;
+
+    padding: 14px;
+
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.balance-box p {
+    color: #3C4A42;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    line-height: 16px;
+}
+
+.balance-value {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 4px;
+}
+
+.balance-value strong {
+    color: #006C49;
+
+    font-size: 26px;
+    font-weight: 800;
+
+    line-height: 32px;
+}
+
+.balance-value span {
+    padding: 4px 10px;
+
+    background: rgba(16, 185, 129, 0.15);
+
+    border-radius: 999px;
+
+    color: #006C49;
+
+    font-family: FreeSans, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+
+    line-height: 16px;
+    letter-spacing: 0.24px;
+}
+
+
+/* =========================
+   NOTIFICATIONS
+========================= */
+
+.notification-section {
+    margin-top: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.notification-header span {
+    color: #3C4A42;
+
+    font-family: FreeSans, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+
+    line-height: 14px;
+    letter-spacing: 0.44px;
+}
+
+.notification-header strong {
+    color: #006C49;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    line-height: 14px;
+    letter-spacing: 0.44px;
+}
+
+
+/* Notification users */
+
+.notification-users {
+    padding: 10px;
+
+    background: rgba(255, 255, 255, 0.6);
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.avatars {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.avatars span {
+    width: 32px;
+    height: 32px;
+
+    margin-left: -5px;
+
+    border: 2px solid white;
+    border-radius: 50%;
+
+    background: #DAE2FD;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #131B2E;
+
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.avatars span:first-child {
+    margin-left: 0;
+}
+
+.notification-text {
+    min-width: 0;
+}
+
+.notification-text strong {
+    display: block;
+
+    color: #131B2E;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    line-height: 16px;
+    letter-spacing: 0.24px;
+}
+
+.notification-text p {
+    color: #3C4A42;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    line-height: 16px;
+}
+
+.notification-check {
+    margin-left: auto;
+
+    color: #006C49;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.actions {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    padding-top: 16px;
+    padding-bottom: 8px;
+}
+
+
+/* Save */
+
+.save-btn {
+    width: 100%;
+    height: 46px;
+
+    background: #006C49;
+
+    border-radius: 999px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 108, 73, 0.35);
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    line-height: 20px;
+    letter-spacing: 0.14px;
+}
+
+
+/* WhatsApp */
+
+.whatsapp-btn {
+    width: 100%;
+    height: 41px;
+
+    background: #25D366;
+
+    border-radius: 999px;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    color: white;
+
+    font-family: FreeSans, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 20px;
+    letter-spacing: 0.14px;
+}
+
+
+/* Another Expense */
+
+.another-btn {
+    width: 100%;
+    height: 41px;
+
+    background: #E2E7FF;
+
+    border-radius: 999px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    color: #131B2E;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    line-height: 20px;
+    letter-spacing: 0.14px;
+}
+
+
+/* =========================
+   BOTTOM NAV
+========================= */
+
+.bottom-nav {
+    position: relative;
+
+    width: 100%;
+    max-width: 512px;
+
+    height: 80px;
+
+    margin: 0 auto;
+
+    padding: 8px 19px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item {
+    width: 56px;
+    height: 56px;
+
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2px;
+
+    color: #3C4A42;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    line-height: 14px;
+    letter-spacing: 0.44px;
+}
+
+.nav-icon {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.nav-item.active {
+    color: #006C49;
+}
+
+
+/* Floating Plus */
+
+.floating-add {
+    position: absolute;
+
+    left: 50%;
+    top: -18px;
+
+    transform: translateX(-50%);
+
+    width: 56px;
+    height: 56px;
+
+    border-radius: 50%;
+
+    background: #10B981;
+
+    box-shadow:
+        0 8px 20px rgba(16, 185, 129, 0.35);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #00422B;
+
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 430px) {
+
+    .main-content {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .expense-card,
+    .ledger-card {
+        padding: 20px;
+        border-radius: 28px;
+    }
+
+    .amount strong {
+        font-size: 26px;
+    }
+
+    .success-section h1 {
+        font-size: 26px;
+    }
+
+    .split-summary {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .per-person {
+        align-self: flex-end;
+    }
+
+    .balance-value {
+        flex-wrap: wrap;
+    }
+
+    .notification-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .app {
+        max-width: 512px;
+
+        min-height: 100vh;
+
+        box-shadow:
+            0 0 40px rgba(19, 27, 46, 0.06);
+    }
+
+    .main-content {
+        padding-top: 24px;
+    }
+}

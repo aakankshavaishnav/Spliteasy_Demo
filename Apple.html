@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SplitEasy - Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Apple.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="brand">
+
+            <div class="brand-mark">
+                <span class="mark-block dark"></span>
+                <span class="mark-block light"></span>
+
+                <span class="divide-symbol">
+                    ÷ 4
+                </span>
+            </div>
+
+            <div class="brand-copy">
+                <div class="brand-name">
+                    SplitEasy
+                </div>
+
+                <div class="tagline">
+                    Split bills, not friendships.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="nav-right">
+
+            <button class="icon-button">
+                ♢
+            </button>
+
+            <img
+                class="avatar"
+                src="https://placehold.co/40x40"
+                alt="Profile"
+            >
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="page">
+
+        <section class="login-card">
+
+            <div class="welcome-icon">
+                <img
+                    src="https://placehold.co/40x40"
+                    alt=""
+                >
+            </div>
+
+
+            <h1>
+                Welcome to SplitEasy
+            </h1>
+
+
+            <p class="intro">
+                Fair, frictionless shared balances with flatmates
+                <br>
+                and travel crews.
+            </p>
+
+
+            <!-- LOGIN FORM -->
+            <form class="login-form" id="loginForm">
+
+                <label class="email-box">
+
+                    <span class="email-icon">
+                        ✉
+                    </span>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="name@example.com"
+                        required
+                    >
+
+                </label>
+
+
+                <button
+                    class="primary-btn"
+                    type="submit"
+                >
+                    Continue
+                </button>
+
+
+                <div class="divider">
+
+                    <span></span>
+
+                    <b>
+                        OR
+                    </b>
+
+                    <span></span>
+
+                </div>
+
+
+                <button
+                    class="apple-btn"
+                    type="button"
+                    id="appleBtn"
+                >
+                    <span class="apple-symbol">
+                        ●
+                    </span>
+
+                    Continue with Apple
+                </button>
+
+            </form>
+
+
+            <!-- GROUP PREVIEW -->
+            <section class="preview">
+
+                <h2>
+                    Active Group Previews
+                </h2>
+
+
+                <div class="group-card">
+
+                    <div class="group-left">
+
+                        <div class="group-icon">
+                            ♣
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Alps Cabin Getaway
+                            </h3>
+
+                            <p>
+                                5 members • Settled yesterday
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <strong>
+                        +$142.50
+                    </strong>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- APPLE LOGIN MODAL -->
+    <div
+        class="modal-backdrop"
+        id="appleModal"
+    >
+
+        <div class="apple-modal">
+
+
+            <!-- MODAL HEADER -->
+            <div class="modal-head">
+
+                <div class="modal-title">
+
+                    <span class="apple-logo">
+                        ●
+                    </span>
+
+                    <h2>
+                        Sign in with Apple ID
+                    </h2>
+
+                </div>
+
+
+                <button
+                    class="close-btn"
+                    id="closeModal"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <!-- APPLE ACCOUNT -->
+            <div class="apple-account">
+
+                <img
+                    src="https://placehold.co/40x40"
+                    alt=""
+                >
+
+                <div>
+
+                    <div class="account-title">
+
+                        <strong>
+                            SplitEasy
+                        </strong>
+
+                        <span class="verified">
+                            Verified
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        Create an account for
+                        <b>SplitEasy</b>
+                        using your
+                        Apple ID
+                        (<b>alex.turner@icloud.com</b>).
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- NAME -->
+            <div class="info-box">
+
+                <span class="section-label">
+                    NAME
+                </span>
+
+
+                <div class="name-row">
+
+                    <strong>
+                        Alex Turner
+                    </strong>
+
+                    <button class="edit-btn">
+                        ✓ Edit
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- EMAIL PREFERENCE -->
+            <div class="email-preferences">
+
+                <span class="section-label">
+                    EMAIL PREFERENCE
+                </span>
+
+
+                <!-- SHARE EMAIL -->
+                <label class="preference">
+
+                    <div>
+
+                        <strong>
+                            Share My Email
+                        </strong>
+
+                        <p>
+                            alex.turner@icloud.com
+                        </p>
+
+                    </div>
+
+                    <input
+                        type="radio"
+                        name="emailPreference"
+                    >
+
+                </label>
+
+
+                <!-- HIDE EMAIL -->
+                <label class="preference selected">
+
+                    <div>
+
+                        <div class="pref-title">
+
+                            <strong>
+                                Hide My Email
+                            </strong>
+
+                            <span class="relay">
+                                Private Relay
+                            </span>
+
+                        </div>
+
+
+                        <p>
+                            Forward to:
+                            <b>alex.turner@icloud.com</b>.
+                            Creates a unique, random address
+                            (<em>k7x9m3qp8z@privaterelay.appleid.com</em>)
+                            so your personal address stays private.
+                        </p>
+
+                    </div>
+
+
+                    <input
+                        type="radio"
+                        name="emailPreference"
+                        checked
+                    >
+
+                </label>
+
+            </div>
+
+
+            <!-- FACE ID -->
+            <div class="face-id-box">
+
+                <div class="face-icon">
+                    ◉
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Confirm with Face ID
+                    </strong>
+
+                    <p>
+                        Double-click side button or tap Continue
+                    </p>
+
+                </div>
+
+
+                <span class="face-symbol">
+                    ◉
+                </span>
+
+            </div>
+
+
+            <!-- CONTINUE -->
+            <button
+                class="face-btn"
+                id="faceBtn"
+            >
+
+                <span class="apple-logo white">
+                    ●
+                </span>
+
+                Continue with Face ID
+
+            </button>
+
+
+            <a
+                href="#"
+                class="privacy-link"
+            >
+                ⌁ &nbsp; Apple ID &amp; Privacy...
+            </a>
+
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,1134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+
+    --bg: #FAF8FF;
+
+    --navy: #131B2E;
+
+    --text: #3C4A42;
+
+    --muted: #6C7A71;
+
+    --green: #006C49;
+
+    --green-bright: #0FA37F;
+
+    --lavender: #F2F3FF;
+
+    --lavender-2: #E2E7FF;
+
+    --line: #DAE2FD;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    background: var(--bg);
+
+    color: var(--navy);
+
+    font-family:
+        "Plus Jakarta Sans",
+        sans-serif;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+
+    width: 100%;
+
+    height: 64px;
+
+    padding: 0 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background:
+        rgba(250, 248, 255, 0.92);
+
+    border-bottom:
+        1px solid rgba(19, 27, 46, 0.04);
+
+    box-shadow:
+        0 1px 8px rgba(0, 0, 0, 0.04);
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.brand-mark {
+
+    width: 38px;
+
+    height: 34px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.mark-block {
+
+    position: absolute;
+
+    width: 24px;
+
+    height: 24px;
+
+    border-radius: 6px;
+}
+
+
+.mark-block.dark {
+
+    left: 0;
+
+    top: 0;
+
+    background: #017E1A;
+}
+
+
+.mark-block.light {
+
+    right: 0;
+
+    bottom: 0;
+
+    background:
+        rgba(1, 126, 26, 0.3);
+}
+
+
+.divide-symbol {
+
+    position: relative;
+
+    z-index: 2;
+
+    color: white;
+
+    font:
+        500 8px/1 Inter, sans-serif;
+}
+
+
+.brand-name {
+
+    font-size: 17px;
+
+    line-height: 21px;
+
+    font-weight: 600;
+}
+
+
+.tagline {
+
+    margin-top: 1px;
+
+    color: var(--text);
+
+    font-size: 9px;
+
+    line-height: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+}
+
+
+.nav-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.icon-button {
+
+    width: 34px;
+
+    height: 34px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: var(--text);
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+
+.avatar {
+
+    width: 32px;
+
+    height: 32px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   MAIN PAGE
+========================= */
+
+.page {
+
+    min-height:
+        calc(100vh - 64px);
+
+    padding:
+        55px 24px 60px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+}
+
+
+.login-card {
+
+    width: min(430px, 100%);
+
+    text-align: center;
+}
+
+
+/* =========================
+   WELCOME
+========================= */
+
+.welcome-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    margin:
+        0 auto 14px;
+
+    padding: 4px;
+
+    border-radius: 50%;
+
+    background:
+        var(--lavender-2);
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+.welcome-icon img {
+
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+}
+
+
+h1 {
+
+    font-size: 24px;
+
+    line-height: 30px;
+
+    font-weight: 700;
+}
+
+
+.intro {
+
+    margin:
+        8px auto 22px;
+
+    max-width: 390px;
+
+    color: var(--text);
+
+    font-size: 13px;
+
+    line-height: 19px;
+}
+
+
+/* =========================
+   LOGIN BOX
+========================= */
+
+.login-form {
+
+    padding: 20px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 2px 10px
+        rgba(19, 27, 46, 0.06);
+}
+
+
+/* EMAIL */
+
+.email-box {
+
+    width: 100%;
+
+    height: 46px;
+
+    padding: 0 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background:
+        var(--lavender);
+
+    border-radius: 12px;
+}
+
+
+.email-icon {
+
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+
+.email-box input {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: var(--navy);
+
+    font:
+        400 13px/19px
+        "Plus Jakarta Sans",
+        sans-serif;
+}
+
+
+.email-box input::placeholder {
+
+    color: var(--muted);
+}
+
+
+/* BUTTONS */
+
+.primary-btn,
+.apple-btn,
+.face-btn {
+
+    width: 100%;
+
+    height: 46px;
+
+    border: none;
+
+    border-radius: 999px;
+
+    font:
+        600 13px/19px
+        "Plus Jakarta Sans",
+        sans-serif;
+
+    cursor: pointer;
+
+    transition:
+        0.15s ease;
+}
+
+
+.primary-btn:hover,
+.apple-btn:hover,
+.face-btn:hover {
+
+    transform:
+        translateY(-1px);
+
+    opacity: 0.94;
+}
+
+
+.primary-btn {
+
+    margin-top: 12px;
+
+    background:
+        var(--green);
+
+    color: white;
+}
+
+
+/* DIVIDER */
+
+.divider {
+
+    margin:
+        15px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+.divider span {
+
+    flex: 1;
+
+    height: 1px;
+
+    background:
+        var(--line);
+}
+
+
+.divider b {
+
+    color: var(--muted);
+
+    font-size: 9px;
+
+    line-height: 12px;
+
+    letter-spacing: 0.35px;
+}
+
+
+/* APPLE BUTTON */
+
+.apple-btn {
+
+    background:
+        var(--lavender-2);
+
+    color: var(--navy);
+}
+
+
+.apple-symbol {
+
+    margin-right: 6px;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   GROUP PREVIEW
+========================= */
+
+.preview {
+
+    margin-top: 26px;
+
+    text-align: left;
+}
+
+
+.preview h2,
+.section-label {
+
+    color: var(--text);
+
+    font-size: 10px;
+
+    line-height: 14px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.45px;
+}
+
+
+.preview h2 {
+
+    margin-bottom: 9px;
+}
+
+
+.group-card {
+
+    min-height: 70px;
+
+    padding: 13px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: white;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 2px 8px
+        rgba(19, 27, 46, 0.05);
+}
+
+
+.group-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+
+.group-icon {
+
+    width: 38px;
+
+    height: 38px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background:
+        var(--lavender-2);
+
+    color: #494BD6;
+
+    font-size: 16px;
+}
+
+
+.group-card h3 {
+
+    font-size: 15px;
+
+    line-height: 20px;
+
+    font-weight: 600;
+}
+
+
+.group-card p {
+
+    margin-top: 2px;
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+    line-height: 14px;
+}
+
+
+.group-card strong {
+
+    color: var(--green);
+
+    font-size: 12px;
+
+    line-height: 17px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   APPLE MODAL
+========================= */
+
+.modal-backdrop {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 20;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 24px;
+
+    background:
+        rgba(19, 27, 46, 0.55);
+
+    backdrop-filter:
+        blur(3px);
+}
+
+
+.modal-backdrop.show {
+
+    display: flex;
+}
+
+
+.apple-modal {
+
+    width: min(470px, 100%);
+
+    max-height:
+        calc(100vh - 48px);
+
+    overflow-y: auto;
+
+    padding: 22px;
+
+    background: white;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 18px 55px
+        rgba(0, 0, 0, 0.20);
+}
+
+
+/* MODAL HEADER */
+
+.modal-head {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 18px;
+}
+
+
+.modal-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.modal-title h2 {
+
+    font-size: 17px;
+
+    line-height: 22px;
+
+    font-weight: 600;
+}
+
+
+.apple-logo {
+
+    font-size: 15px;
+
+    color: var(--navy);
+}
+
+
+.apple-logo.white {
+
+    color: white;
+
+    font-size: 12px;
+}
+
+
+.close-btn {
+
+    width: 30px;
+
+    height: 30px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        #EAEDFF;
+
+    color: var(--text);
+
+    font-size: 19px;
+
+    cursor: pointer;
+}
+
+
+/* APPLE ACCOUNT */
+
+.apple-account {
+
+    padding: 13px;
+
+    display: flex;
+
+    gap: 12px;
+
+    align-items: center;
+
+    background:
+        var(--lavender);
+
+    border-radius: 13px;
+}
+
+
+.apple-account img {
+
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 11px;
+}
+
+
+.account-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+.account-title strong {
+
+    font-size: 15px;
+
+    line-height: 20px;
+}
+
+
+.verified,
+.relay {
+
+    padding: 2px 7px;
+
+    border-radius: 999px;
+
+    background:
+        rgba(0, 108, 73, 0.10);
+
+    color:
+        var(--green);
+
+    font-size: 9px;
+
+    line-height: 13px;
+
+    font-weight: 700;
+}
+
+
+.apple-account p,
+.preference p,
+.face-id-box p {
+
+    margin-top: 3px;
+
+    color: var(--text);
+
+    font-size: 10px;
+
+    line-height: 15px;
+}
+
+
+/* NAME */
+
+.info-box {
+
+    margin-top: 12px;
+
+    padding: 13px;
+
+    background:
+        var(--lavender);
+
+    border-radius: 13px;
+}
+
+
+.name-row {
+
+    margin-top: 5px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.name-row strong {
+
+    font-size: 15px;
+
+    line-height: 20px;
+}
+
+
+.edit-btn {
+
+    border: none;
+
+    background: transparent;
+
+    color:
+        var(--green);
+
+    font:
+        700 10px/14px
+        "Plus Jakarta Sans",
+        sans-serif;
+
+    cursor: pointer;
+}
+
+
+/* EMAIL PREFERENCES */
+
+.email-preferences {
+
+    margin-top: 16px;
+
+    overflow: hidden;
+
+    background:
+        var(--lavender);
+
+    border-radius: 13px;
+}
+
+
+.email-preferences > .section-label {
+
+    display: block;
+
+    padding:
+        0 13px 8px;
+}
+
+
+.preference {
+
+    padding: 13px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    cursor: pointer;
+}
+
+
+.preference + .preference {
+
+    border-top:
+        1px solid var(--line);
+}
+
+
+.preference.selected {
+
+    background:
+        #EAEDFF;
+}
+
+
+.preference strong {
+
+    font-size: 15px;
+
+    line-height: 20px;
+
+    font-weight: 600;
+}
+
+
+.pref-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+.preference input {
+
+    width: 16px;
+
+    height: 16px;
+
+    margin-top: 2px;
+
+    accent-color:
+        var(--green);
+}
+
+
+.preference em {
+
+    color:
+        var(--green);
+
+    font-style: normal;
+}
+
+
+/* FACE ID BOX */
+
+.face-id-box {
+
+    margin-top: 12px;
+
+    padding: 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    background:
+        var(--lavender);
+
+    border-radius: 13px;
+}
+
+
+.face-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    flex: 0 0 40px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background:
+        var(--lavender-2);
+
+    color:
+        var(--green);
+
+    font-size: 16px;
+}
+
+
+.face-id-box strong {
+
+    font-size: 15px;
+
+    line-height: 20px;
+
+    font-weight: 600;
+}
+
+
+.face-symbol {
+
+    margin-left: auto;
+
+    color:
+        var(--green);
+
+    font-size: 18px;
+}
+
+
+/* FACE ID BUTTON */
+
+.face-btn {
+
+    margin-top: 12px;
+
+    height: 48px;
+
+    background:
+        var(--navy);
+
+    color: white;
+
+    box-shadow:
+        0 7px 18px
+        rgba(19, 27, 46, 0.20);
+}
+
+
+/* PRIVACY */
+
+.privacy-link {
+
+    display: block;
+
+    margin-top: 10px;
+
+    color:
+        var(--green);
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-size: 9px;
+
+    line-height: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 900px) {
+
+    .page {
+
+        padding-top: 64px;
+    }
+
+
+    .login-card {
+
+        width: 430px;
+    }
+
+
+    .modal-backdrop {
+
+        justify-content: flex-end;
+
+        padding-right: 7vw;
+    }
+
+
+    .apple-modal {
+
+        width: 460px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+
+        padding: 0 18px;
+    }
+
+
+    .page {
+
+        padding:
+            36px 16px 40px;
+    }
+
+
+    .apple-modal {
+
+        padding: 18px;
+
+        border-radius: 20px;
+    }
+
+}

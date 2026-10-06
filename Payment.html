@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SplitEasy - Payment</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Payment.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="header-left">
+
+            <button class="back-btn" aria-label="Go back">
+                ←
+            </button>
+
+            <div class="logo">
+                <div class="logo-box logo-box-dark"></div>
+                <div class="logo-box logo-box-light"></div>
+
+                <div class="logo-symbol">÷</div>
+                <div class="logo-four">4</div>
+            </div>
+
+            <div class="page-title">
+                Payment
+            </div>
+
+        </div>
+
+        <div class="profile">
+            MG
+        </div>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- SUCCESS AREA -->
+        <section class="success-section">
+
+            <div class="success-icon-wrap">
+
+                <div class="success-glow"></div>
+
+                <div class="success-icon">
+                    ✓
+
+                    <div class="mini-icon">
+                        ↗
+                    </div>
+
+                </div>
+
+            </div>
+
+            <h1>Payment Successful!</h1>
+
+            <div class="payment-status">
+                <span class="status-dot"></span>
+                <span>Settled via Google Pay UPI</span>
+            </div>
+
+        </section>
+
+
+        <!-- AMOUNT CARD -->
+        <section class="amount-card">
+
+            <div class="amount-label">
+                AMOUNT TRANSFERRED
+            </div>
+
+            <div class="amount">
+                ₹850.00
+            </div>
+
+            <div class="recipient">
+
+                <div class="recipient-avatar">
+                    SP
+                </div>
+
+                <div class="recipient-info">
+                    <div class="recipient-name">
+                        Sneha Patel
+                    </div>
+
+                    <div class="recipient-upi">
+                        sneha@oksbi
+                    </div>
+                </div>
+
+                <div class="verified">
+                    ✓
+                </div>
+
+            </div>
+
+            <div class="amount-line"></div>
+
+        </section>
+
+
+        <!-- LEDGER UPDATE CARD -->
+        <section class="ledger-card">
+
+            <div class="ledger-heading">
+
+                <div class="ledger-title">
+                    <span class="ledger-icon">✓</span>
+                    <span>Goa Trip Ledger Updated</span>
+                </div>
+
+                <span class="live-badge">
+                    Live
+                </span>
+
+            </div>
+
+
+            <div class="balance-row">
+
+                <div class="balance-left">
+
+                    <div class="balance-icon">
+                        ✓
+                    </div>
+
+                    <div>
+                        <div class="balance-title">
+                            New Balance with Sneha
+                        </div>
+
+                        <div class="balance-subtitle">
+                            All Cleared • Zero debt
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="zero-balance">
+                    ₹0.00
+                </div>
+
+            </div>
+
+
+            <div class="balance-footer">
+
+                <span class="previous">
+                    Previous: -₹850.00
+                </span>
+
+                <span class="divider-dot">◆</span>
+
+                <span class="current">
+                    Current: ₹0.00
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECEIPT SUMMARY -->
+        <section class="receipt-card">
+
+            <div class="receipt-header">
+
+                <h2>
+                    Receipt Summary
+                </h2>
+
+                <span class="receipt-id">
+                    ID: REC-2026-0226
+                </span>
+
+            </div>
+
+
+            <div class="receipt-details">
+
+                <div class="receipt-row">
+
+                    <span class="receipt-label">
+                        UPI Ref / UTR
+                    </span>
+
+                    <span class="receipt-value purple">
+                        405928172941
+                        <span class="copy">▣</span>
+                    </span>
+
+                </div>
+
+
+                <div class="receipt-row">
+
+                    <span class="receipt-label">
+                        Date &amp; Time
+                    </span>
+
+                    <span class="receipt-value">
+                        26 Feb 2026, 11:45 PM
+                    </span>
+
+                </div>
+
+
+                <div class="receipt-row">
+
+                    <span class="receipt-label">
+                        Paid From
+                    </span>
+
+                    <span class="receipt-value">
+                        <span class="bank-icon">●</span>
+                        HDFC Bank •••• 8831
+                    </span>
+
+                </div>
+
+
+                <div class="receipt-row settlement-row">
+
+                    <span class="receipt-label">
+                        Settlement For
+                    </span>
+
+                    <span class="receipt-value settlement">
+                        Homestay advance &amp; breakfast<br>
+                        buffer
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RETURN BUTTON -->
+        <section class="return-section">
+
+            <button class="return-btn">
+                <span>Return to Goa Trip</span>
+                <span class="arrow">→</span>
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- BOTTOM NAVIGATION -->
+    <nav class="bottom-nav">
+
+        <a href="#" class="nav-item">
+            <span class="nav-icon">⌂</span>
+            <span>Home</span>
+        </a>
+
+        <a href="#" class="nav-item">
+            <span class="nav-icon">♧</span>
+            <span>Friends</span>
+        </a>
+
+        <a href="#" class="nav-item active">
+            <span class="nav-icon">▣</span>
+            <span>Groups</span>
+        </a>
+
+        <a href="#" class="nav-item">
+            <span class="nav-icon">●</span>
+            <span>Profile</span>
+        </a>
+
+        <button class="add-btn" aria-label="Add">
+            +
+        </button>
+
+    </nav>
+
+</div>
+
+</body>
+</html>
